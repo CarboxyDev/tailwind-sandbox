@@ -3,6 +3,7 @@ import { CheckCircleIcon } from "@heroicons/react/24/outline";
 
 // FIXME: Refactor this component to use 4px as the unit for layout and spacing, etc.
 // TODO: Polish this component (in the Figma file first)
+// TODO: Make this component responsive
 
 const Dialog = (props: any) => {
   let { name, price, currency } = props.product;
