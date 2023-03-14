@@ -1,6 +1,6 @@
 import { type NextPage } from "next";
 import Head from "next/head";
-import Button from "../components/Button";
+import Sandbox from "./sandbox";
 
 const Home: NextPage = () => {
   return (
@@ -14,9 +14,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className="pt-12 pl-12">
-          <Button>Continue</Button>
-        </div>
+        <Sandbox />
       </main>
     </>
   );
