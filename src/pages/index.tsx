@@ -1,5 +1,6 @@
 import { type NextPage } from "next";
 import Head from "next/head";
+import Button from "../components/Button";
 
 const Home: NextPage = () => {
   return (
@@ -12,7 +13,11 @@ const Home: NextPage = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main></main>
+      <main>
+        <div className="pt-12 pl-12">
+          <Button>Continue</Button>
+        </div>
+      </main>
     </>
   );
 };
