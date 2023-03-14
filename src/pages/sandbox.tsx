@@ -10,11 +10,17 @@ const Sandbox: NextPage = () => {
       <div className="pt-12 pl-12">
         <Button>Continue</Button>
         <div className="pt-24"></div>
-        <div className="flex flex-row flex-wrap space-x-8">
+        {/* TODO: Make the grid work properly. 1 col for phones, 3 cols for desktops*/}
+        <div className="col-3 mx-auto grid-cols-1">
           <CompactCard
             title="Chat with almost no latency"
             text="Our ultra-fast servers take no time in delivering your message"
             icon={<BoltIcon className="h-7 w-7" />}
+          ></CompactCard>
+          <CompactCard
+            title="Safety at its finest"
+            text="We use the most secure protocols to handle all events in our application"
+            icon={<LockClosedIcon className="h-7 w-7" />}
           ></CompactCard>
           <CompactCard
             title="Safety at its finest"
