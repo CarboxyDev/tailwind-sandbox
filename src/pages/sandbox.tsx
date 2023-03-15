@@ -2,16 +2,25 @@ import { NextPage } from "next";
 import Button from "../components/Button";
 import CompactCard from "../components/CompactCard";
 import Dialog from "../components/Dialog";
-import { BoltIcon, LockClosedIcon } from "@heroicons/react/24/solid";
+import {
+  BoltIcon,
+  LockClosedIcon,
+  ArrowDownTrayIcon,
+} from "@heroicons/react/24/solid";
+import PricingCard from "../components/PricingCard";
 
 const Sandbox: NextPage = () => {
   return (
     <>
-      <div className="pt-12 pl-12">
+      <div className="px-12 pt-12">
         <Button>Continue</Button>
         <div className="pt-24"></div>
+        <div>
+          <PricingCard />
+        </div>
+        <div className="pt-24"></div>
         {/* TODO: Make the grid work properly. 1 col for phones, 3 cols for desktops*/}
-        <div className="col-3 mx-auto grid-cols-1">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           <CompactCard
             title="Chat with almost no latency"
             text="Our ultra-fast servers take no time in delivering your message"
@@ -23,9 +32,9 @@ const Sandbox: NextPage = () => {
             icon={<LockClosedIcon className="h-7 w-7" />}
           ></CompactCard>
           <CompactCard
-            title="Safety at its finest"
-            text="We use the most secure protocols to handle all events in our application"
-            icon={<LockClosedIcon className="h-7 w-7" />}
+            title="Super fast downloads and uploads"
+            text="Our servers use the highest possible bandwidth possible to make your downloads faster than light"
+            icon={<ArrowDownTrayIcon className="h-7 w-7" />}
           ></CompactCard>
         </div>
         <div className="pt-96"></div>
