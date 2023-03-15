@@ -4,7 +4,8 @@ const TestimonialCard = (props: any) => {
 
   return (
     <>
-      <div className="h-auto w-96 rounded-2xl px-8 pt-7 shadow-md">
+      {/* self-start makes the TestimonalCards' heights independent of each other when together */}
+      <div className="h-auto w-96 self-start rounded-2xl px-8 pt-7 shadow-md">
         <p className="break-words pb-8 text-lg leading-[32px] text-[#374151]">
           {comment}
         </p>
