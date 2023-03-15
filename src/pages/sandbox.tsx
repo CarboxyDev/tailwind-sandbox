@@ -8,12 +8,24 @@ import {
   ArrowDownTrayIcon,
 } from "@heroicons/react/24/solid";
 import PricingCard from "../components/PricingCard";
+import TestimonialCard from "../components/TestimonialCard";
 
 const Sandbox: NextPage = () => {
   return (
     <>
       <div className="px-12 pt-12">
         <div className="pt-24"></div>
+        <TestimonialCard
+          comment="This product is an amazing invention. I'm impressed with how fast the
+          download and upload speeds are. I'm looking forward to having a great
+          time using this product."
+          author={{
+            name: "Jamie Brooks",
+            title: "Lead Developer at CharityLake",
+            image: "generic-man-1.png",
+          }}
+        />
+        <div className="pt-80 pb-80"></div>
         <div className="grid grid-cols-1 gap-x-6 gap-y-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           <PricingCard
             plan={{
