@@ -22,7 +22,7 @@ const PricingCard = (props: any) => {
   return (
     <>
       <div className="box-border flex h-auto w-72 flex-col rounded-2xl px-7 py-7 shadow-md">
-        <div className="flex h-7 w-16 items-center justify-center rounded-3xl border border-gray-200 text-xs font-semibold uppercase">
+        <div className="flex h-7 w-fit items-center justify-center rounded-3xl border border-gray-200 py-2 px-4 text-xs font-semibold uppercase">
           {type}
         </div>
         <div className="pt-6 pb-10">

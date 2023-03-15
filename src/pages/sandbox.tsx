@@ -14,10 +14,25 @@ const Sandbox: NextPage = () => {
     <>
       <div className="px-12 pt-12">
         <div className="pt-24"></div>
-        <div>
+        <div className="grid grid-cols-4 gap-x-4">
           <PricingCard
             plan={{
               type: "basic",
+              name: "Professional✨",
+              price: "$9.99",
+            }}
+            benefits={[
+              "Faster downloads",
+              "Comprehensive file analytics",
+              "Priority support",
+              "Custom domain & API",
+              "Access to VIP lounge",
+            ]}
+            buttonText="Subscribe monthly"
+          />
+          <PricingCard
+            plan={{
+              type: "intermediate",
               name: "Professional✨",
               price: "$9.99",
             }}
