@@ -14,36 +14,70 @@ const Sandbox: NextPage = () => {
     <>
       <div className="px-12 pt-12">
         <div className="pt-24"></div>
-        <div className="grid grid-cols-4 gap-x-4">
+        <div className="grid grid-cols-1 gap-x-6 gap-y-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           <PricingCard
             plan={{
               type: "basic",
-              name: "Professional✨",
+              name: "Standard",
               price: "$9.99",
             }}
             benefits={[
               "Faster downloads",
               "Comprehensive file analytics",
-              "Priority support",
+              "Priority mail support",
               "Custom domain & API",
               "Access to VIP lounge",
             ]}
             buttonText="Subscribe monthly"
+            buttonType="primary"
           />
           <PricingCard
             plan={{
               type: "intermediate",
-              name: "Professional✨",
-              price: "$9.99",
+              name: "Professional",
+              price: "$15.99",
             }}
             benefits={[
-              "Faster downloads",
-              "Comprehensive file analytics",
-              "Priority support",
+              "Ultra fast file transfers",
+              "One click file analytics",
+              "Priority mail and call support",
               "Custom domain & API",
               "Access to VIP lounge",
             ]}
             buttonText="Subscribe monthly"
+            buttonType="primary"
+          />
+          <PricingCard
+            plan={{
+              type: "BEST",
+              name: "Premium ✨",
+              price: "$25.99",
+            }}
+            benefits={[
+              "Almost instant file transfers",
+              "Fifteen different analytical tools",
+              "Priority mail and call support",
+              "Unlimited custom domains & API",
+              "Access to Premium lounge",
+            ]}
+            buttonText="Subscribe monthly"
+            buttonType="secondary"
+          />
+          <PricingCard
+            plan={{
+              type: "BEST",
+              name: "Enterprise",
+              price: "Custom",
+            }}
+            benefits={[
+              "Enterprise level file transfers",
+              "Custom analytical tools",
+              "Enterprise level support",
+              "Unlimited custom domains & API",
+              "Access to Enterprise cell",
+            ]}
+            buttonText="Contact support"
+            buttonType="supreme"
           />
         </div>
         <div className="pt-24"></div>

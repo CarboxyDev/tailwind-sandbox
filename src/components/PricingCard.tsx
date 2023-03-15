@@ -1,4 +1,5 @@
 import { CheckIcon } from "@heroicons/react/24/solid";
+import { clsx } from "clsx";
 
 const PricingListItem = (props: any) => {
   let { text } = props;
@@ -16,12 +17,12 @@ const PricingListItem = (props: any) => {
 };
 
 const PricingCard = (props: any) => {
-  let { plan, benefits, buttonText } = props;
+  let { plan, benefits, buttonText, buttonType } = props;
   let { type, name, price } = plan;
 
   return (
     <>
-      <div className="box-border flex h-auto w-72 flex-col rounded-2xl px-7 py-7 shadow-md">
+      <div className="box-border flex h-auto w-80 flex-col rounded-2xl px-7 py-7 shadow-md">
         <div className="flex h-7 w-fit items-center justify-center rounded-3xl border border-gray-200 py-2 px-4 text-xs font-semibold uppercase">
           {type}
         </div>
@@ -37,7 +38,15 @@ const PricingCard = (props: any) => {
         </div>
         <div className="h-px w-full bg-gray-200" />
         <div className="pt-7">
-          <button className="flex h-10 w-full min-w-[232px] items-center justify-center rounded-lg bg-primary text-sm font-semibold text-white hover:bg-primary-600">
+          <button
+            className={clsx(
+              "flex h-10 w-full min-w-[232px] items-center justify-center rounded-lg text-sm font-semibold text-white",
+              buttonType == "primary" && "bg-primary hover:bg-primary-600",
+              buttonType == "secondary" &&
+                "bg-secondary hover:bg-secondary-700",
+              buttonType == "supreme" && "bg-[#6D4DF5] hover:bg-[#5836E7]"
+            )}
+          >
             {buttonText}
           </button>
         </div>
