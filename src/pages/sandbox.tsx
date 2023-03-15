@@ -13,10 +13,23 @@ const Sandbox: NextPage = () => {
   return (
     <>
       <div className="px-12 pt-12">
-        <Button>Continue</Button>
         <div className="pt-24"></div>
         <div>
-          <PricingCard />
+          <PricingCard
+            plan={{
+              type: "basic",
+              name: "Professional✨",
+              price: "$9.99",
+            }}
+            benefits={[
+              "Faster downloads",
+              "Comprehensive file analytics",
+              "Priority support",
+              "Custom domain & API",
+              "Access to VIP lounge",
+            ]}
+            buttonText="Subscribe monthly"
+          />
         </div>
         <div className="pt-24"></div>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
