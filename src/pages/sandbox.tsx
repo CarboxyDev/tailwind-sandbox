@@ -14,7 +14,7 @@ const Sandbox: NextPage = () => {
     <>
       <div className="px-12 pt-12">
         <div className="pt-24"></div>
-        <div className="grid grid-cols-1 gap-x-6 gap-y-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div className="grid grid-cols-1 gap-x-6 gap-y-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           <PricingCard
             plan={{
               type: "basic",
@@ -49,7 +49,7 @@ const Sandbox: NextPage = () => {
           />
           <PricingCard
             plan={{
-              type: "BEST",
+              type: "MOST FAMOUS",
               name: "Premium ✨",
               price: "$25.99",
             }}
