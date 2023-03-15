@@ -19,7 +19,6 @@ const Sandbox: NextPage = () => {
           <PricingCard />
         </div>
         <div className="pt-24"></div>
-        {/* TODO: Make the grid work properly. 1 col for phones, 3 cols for desktops*/}
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           <CompactCard
             title="Chat with almost no latency"
