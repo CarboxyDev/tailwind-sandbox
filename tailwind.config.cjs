@@ -19,9 +19,10 @@ module.exports = {
           900: "#0f4f6b",
           DEFAULT: "#15b4e7",
         },
-        fontFamily: {
-          sans: ["Inter", ...defaultTheme.fontFamily.sans],
-        },
+      },
+      fontFamily: {
+        sans: ["Inter var", ...defaultTheme.fontFamily.sans],
+        inter: ["Inter var", ...defaultTheme.fontFamily.sans],
       },
     },
   },

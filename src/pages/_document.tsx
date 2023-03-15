@@ -2,7 +2,7 @@ import { Html, Head, Main, NextScript } from "next/document";
 
 const Document = () => {
   return (
-    <Html className="font-sans">
+    <Html>
       <Head>
         <meta
           name="description"
