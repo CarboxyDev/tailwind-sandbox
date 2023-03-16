@@ -34,6 +34,14 @@ const Sandbox: NextPage = () => {
               image: "generic-man-1.png",
             }}
           />
+          <TestimonialCard
+            comment="An amazing product. Would highly recommend it."
+            author={{
+              name: "James E. Price",
+              title: "CEO at FundStation",
+              image: "generic-man-1.png",
+            }}
+          />
         </div>
         <div className="pt-80 pb-80"></div>
         <div className="grid grid-cols-1 gap-x-6 gap-y-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
