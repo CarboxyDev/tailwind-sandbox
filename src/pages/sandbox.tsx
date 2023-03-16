@@ -15,6 +15,7 @@ const Sandbox: NextPage = () => {
     <>
       <div className="px-12 pt-12">
         <div className="pt-24"></div>
+        <div className="pt-80 pb-80"></div>
         <div className="grid grid-cols-1 gap-x-6 gap-y-6 sm:grid-cols-2 xl:grid-cols-3 ">
           <TestimonialCard
             comment="This product is an amazing invention. I'm impressed with how fast the

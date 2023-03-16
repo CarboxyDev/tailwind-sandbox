@@ -1,4 +1,5 @@
 import { Html, Head, Main, NextScript } from "next/document";
+import { clsx } from "clsx";
 
 const Document = () => {
   return (
@@ -11,7 +12,12 @@ const Document = () => {
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
       </Head>
-      <body className="font-inter">
+      <body
+        className={clsx(
+          "font-inter",
+          process.env.DEV == "true" && "debug-screens"
+        )}
+      >
         <Main />
         <NextScript />
       </body>
