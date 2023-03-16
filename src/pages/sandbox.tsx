@@ -9,10 +9,12 @@ import {
 } from "@heroicons/react/24/solid";
 import PricingCard from "../components/PricingCard";
 import TestimonialCard from "../components/TestimonialCard";
+import Navbar from "../components/Navbar";
 
 const Sandbox: NextPage = () => {
   return (
     <>
+      <Navbar />
       <div className="px-12 pt-12">
         <div className="pt-24"></div>
         <div className="pt-80 pb-80"></div>
