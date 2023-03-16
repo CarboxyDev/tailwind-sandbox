@@ -5,7 +5,7 @@ const TestimonialCard = (props: any) => {
   return (
     <>
       {/* self-start makes the TestimonalCards' heights independent of each other when together */}
-      <div className="h-auto w-96 self-start rounded-2xl px-8 pt-7 shadow hover:shadow-md hover:shadow-primary-200 hover:transition-shadow hover:delay-200 hover:duration-200">
+      <div className="h-auto w-72 self-start rounded-2xl px-8 pt-7 shadow hover:shadow-md hover:shadow-primary-200 hover:transition-shadow hover:delay-200 hover:duration-200 lg:w-80 xl:w-96">
         <p className="break-words pb-8 text-lg leading-[32px] text-[#374151]">
           {comment}
         </p>
