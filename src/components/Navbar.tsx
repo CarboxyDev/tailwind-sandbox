@@ -15,7 +15,7 @@ const Navbar = () => {
           <Link href="/">
             <img src="/generic-logo-1.png" className="h-12 w-12" alt="logo" />
           </Link>
-          <h2 className="text-lg font-semibold text-slate-700">charitylake</h2>
+          <h2 className="text-lg font-semibold text-slate-700">sandbox</h2>
         </div>
         <div className="ml-16 hidden list-none flex-row items-center gap-x-9 lg:flex">
           {navItems.map((item) => {
