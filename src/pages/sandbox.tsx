@@ -133,21 +133,6 @@ const Sandbox: NextPage = () => {
         </div>
         <div className="pt-96"></div>
         <div className="pt-24"></div>
-        <Dialog
-          product={{
-            name: "Tailwind Design Handbook",
-            price: 120,
-            currency: "USD",
-          }}
-        />
-        <div className="pt-32"></div>
-        <Dialog
-          product={{
-            name: "A Gorgeous blue lamborghini",
-            price: 345000,
-            currency: "USD",
-          }}
-        />
       </div>
     </>
   );
