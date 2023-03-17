@@ -11,9 +11,9 @@ const Navbar = () => {
   return (
     <>
       <div className="flex h-24 flex-row items-center px-4 sm:h-32 sm:px-8 lg:px-28">
-        <div className="flex flex-row items-center gap-x-5">
+        <div className="flex flex-row items-center gap-x-3">
           <img src="/generic-logo-1.png" className="h-12 w-12" alt="logo" />
-          <h2 className="text-lg font-semibold text-primary">CharityLake</h2>
+          <h2 className="text-lg font-semibold text-primary">charitylake</h2>
         </div>
         <div className="ml-16 hidden list-none flex-row items-center gap-x-9 lg:flex">
           {navItems.map((item) => {
