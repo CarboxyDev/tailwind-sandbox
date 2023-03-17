@@ -3,19 +3,19 @@ import { GithubIcon, GoogleIcon, TwitterIcon } from "../utils/icons";
 const LoginForm = () => {
   return (
     <>
-      <div className="box-border min-w-[520px] rounded-2xl px-12 py-9 shadow">
+      <div className="box-border min-w-[360px] rounded-2xl  px-8 py-9 shadow sm:min-w-[440px] sm:px-12 xl:min-w-[480px]">
         <div className="flex flex-col">
           <p className="font-medium text-gray-600">Email address</p>
           <input
             type="email"
-            className="mt-3 h-10 rounded-lg border border-gray-300 px-2"
+            className="mt-3 h-10 rounded-lg border border-gray-300 px-2 focus:outline-primary"
           />
         </div>
         <div className="mt-8 flex flex-col">
           <p className="font-medium text-gray-600">Password</p>
           <input
             type="password"
-            className="mt-3 h-10 rounded-lg border border-gray-300 px-2"
+            className="mt-3 h-10 rounded-lg border border-gray-300 px-2 focus:outline-primary"
           />
         </div>
         <div className="mt-6 flex justify-end">
@@ -32,13 +32,13 @@ const LoginForm = () => {
           <div className="ml-auto h-px flex-1 bg-gray-200"></div>
         </div>
         <div className="mt-9 grid grid-cols-3 gap-x-5 text-gray-500">
-          <div className="flex h-10 items-center justify-center rounded-lg border border-gray-300">
+          <div className="flex h-10 items-center justify-center rounded-lg border border-gray-300 transition delay-100 ease-out hover:border-primary-200 hover:text-primary-400 hover:shadow hover:shadow-primary-300">
             <GoogleIcon className="h-7 w-7" />
           </div>
-          <div className="flex h-10 items-center justify-center rounded-lg border border-gray-300">
+          <div className="flex h-10 items-center justify-center rounded-lg border border-gray-300 transition delay-100 ease-out hover:border-primary-200 hover:text-primary-400 hover:shadow hover:shadow-primary-300">
             <GithubIcon className="h-7 w-7" />
           </div>
-          <div className="flex h-10 items-center justify-center rounded-lg border border-gray-300">
+          <div className="flex h-10 items-center justify-center rounded-lg border border-gray-300 transition delay-100 ease-out hover:border-primary-200 hover:text-primary-400 hover:shadow hover:shadow-primary-300">
             <TwitterIcon className="h-7 w-7" />
           </div>
         </div>
