@@ -5,17 +5,17 @@ const Footer = () => {
     <>
       <div className="flex flex-col justify-center px-6 py-12 sm:px-28">
         <div className="h-px bg-gray-200"></div>
-        <div className="mt-10 flex flex-row items-center justify-center">
+        <div className="mt-10 flex flex-row items-center justify-center leading-6">
           <img src="/generic-logo-1.png" className="h-8 w-8"></img>
           <h3 className="ml-3 font-semibold text-slate-900">charitylake</h3>
-          <span className="hover: ml-2 rounded border border-gray-300 px-3 py-1 text-xs font-semibold text-gray-300 transition-colors delay-150 ease-in-out hover:border-emerald-400 hover:bg-emerald-400 hover:text-white">
+          <span className="ml-2 rounded border border-gray-300 px-3 py-1 text-xs font-semibold tracking-wider text-gray-300 transition-colors delay-150 ease-in-out hover:border-emerald-400 hover:bg-emerald-400 hover:text-white">
             BETA
           </span>
         </div>
-        <div className="mt-5 flex justify-center text-sm text-slate-500">
-          © 2023 Swibble Labs. All rights reserved.
+        <div className="mt-5 flex justify-center text-sm font-light leading-6 text-slate-500">
+          © 2023 Swibble Labs Inc. All rights reserved.
         </div>
-        <div className="mt-14 hidden list-none flex-row items-center justify-center gap-x-4 text-sm text-[#475569] sm:flex">
+        <div className="mt-14 hidden list-none flex-row items-center justify-center gap-x-4 text-sm text-slate-600 sm:flex">
           <li className="rounded-md px-2 py-1  hover:bg-slate-50 hover:text-slate-700">
             <Link href="/browse">Browse</Link>
           </li>
