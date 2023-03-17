@@ -3,7 +3,7 @@ import { GithubIcon, GoogleIcon, TwitterIcon } from "../utils/icons";
 const LoginForm = () => {
   return (
     <>
-      <div className="box-border min-w-[360px] rounded-2xl  px-8 py-9 shadow sm:min-w-[440px] sm:px-12 xl:min-w-[480px]">
+      <div className="box-border min-w-[360px] rounded-2xl  px-8 py-9 sm:min-w-[440px] sm:px-12 sm:shadow xl:min-w-[480px]">
         <div className="flex flex-col">
           <p className="font-medium text-gray-600">Email address</p>
           <input
