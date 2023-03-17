@@ -10,6 +10,7 @@ import {
 import PricingCard from "../components/PricingCard";
 import TestimonialCard from "../components/TestimonialCard";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const Sandbox: NextPage = () => {
   return (
@@ -134,6 +135,7 @@ const Sandbox: NextPage = () => {
         <div className="pt-96"></div>
         <div className="pt-24"></div>
       </div>
+      <Footer />
     </>
   );
 };
