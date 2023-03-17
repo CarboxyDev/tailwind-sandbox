@@ -11,6 +11,7 @@ import PricingCard from "../components/PricingCard";
 import TestimonialCard from "../components/TestimonialCard";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import LoginForm from "../components/LoginForm";
 
 const Sandbox: NextPage = () => {
   return (
@@ -18,6 +19,9 @@ const Sandbox: NextPage = () => {
       <Navbar />
       <div className="px-12 pt-12">
         <div className="pt-24"></div>
+        <div className="flex items-center justify-center">
+          <LoginForm />
+        </div>
         <div className="pt-80 pb-80"></div>
         <div className="grid grid-cols-1 gap-x-6 gap-y-6 sm:grid-cols-2 xl:grid-cols-3 ">
           <TestimonialCard
