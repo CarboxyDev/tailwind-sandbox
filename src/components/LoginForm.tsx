@@ -11,7 +11,7 @@ const LoginForm = () => {
             type="email"
             className="mt-3 h-10 rounded-lg border border-gray-300 px-2 text-gray-700 focus:outline-primary"
             required
-            autoComplete="email"
+            autoComplete="on"
           />
         </div>
         <div className="mt-8 flex flex-col">
@@ -20,7 +20,6 @@ const LoginForm = () => {
             type="password"
             className="mt-3 h-10 rounded-lg border border-gray-300 px-2 text-gray-700 focus:outline-primary"
             required
-            autoComplete="current-password"
           />
         </div>
         <div className="mt-6 flex justify-end">
