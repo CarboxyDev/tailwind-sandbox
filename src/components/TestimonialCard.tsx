@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { clientEnv } from "../env/schema.mjs";
 
 const TestimonialCard = (props: any) => {
   let { comment, author } = props;
@@ -12,15 +13,15 @@ const TestimonialCard = (props: any) => {
       }}
     >
       {/* self-start makes the TestimonalCards' heights independent of each other when together */}
-      <div className="h-auto w-72 self-start rounded-2xl px-8 pt-7 shadow hover:shadow-md hover:shadow-primary-200 hover:transition-shadow hover:delay-200 hover:duration-200 lg:w-80 xl:w-96">
-        <p className="break-words pb-8 text-lg leading-[32px] text-[#374151]">
+      <div className="max-w-screen-sm:max-w-xs h-auto w-84 self-start rounded-2xl px-8 py-7 shadow hover:shadow-md hover:shadow-primary-200 hover:transition-shadow hover:delay-200 hover:duration-200 lg:w-90 xl:w-96">
+        <p className="mb-8 break-words text-lg leading-8 text-gray-800">
           {comment}
         </p>
         <div className="h-px w-full bg-gray-200" />
-        <div className="flex flex-row pt-7 pb-7">
+        <div className="mt-7 flex flex-row">
           <div className="flex flex-col">
-            <span className="pb-1 font-medium text-[#545454]">{name}</span>
-            <span className="pb-1 text-sm text-[#A4A8AF]">{title}</span>
+            <span className="mb-1 font-medium text-gray-600">{name}</span>
+            <span className="mb-1 text-sm text-gray-400">{title}</span>
           </div>
           <div className="ml-auto">
             <img src={"/" + image} className="h-12 w-12 rounded-full" />
