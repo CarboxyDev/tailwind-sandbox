@@ -7,14 +7,14 @@ const CardWithImageAndButton = (props: any) => {
         <div className="mb-8 h-40">
           <img
             src={image}
-            className="h-40 w-full rounded-2xl object-cover"
+            className="h-40 w-full rounded-md object-cover"
             alt="card image"
           />
         </div>
         <div className="h-px w-full bg-gray-200" />
         <div className="mt-12 mb-8">
           <h2 className="text-xl font-semibold text-slate-700">{heading}</h2>
-          <p className="mt-4 text-sm text-gray-600">{content}</p>
+          <p className="mt-4 text-sm text-gray-700">{content}</p>
         </div>
         <div className="h-px w-full bg-gray-200" />
         <div className="mt-7 h-11">
