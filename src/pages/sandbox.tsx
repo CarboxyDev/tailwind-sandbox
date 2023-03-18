@@ -19,7 +19,7 @@ const Sandbox: NextPage = () => {
   return (
     <>
       <Navbar />
-      <div className="px-12 pt-12">
+      <div className="px-4 pt-12 sm:px-10 md:px-12">
         <div className="pt-24"></div>
         <div></div>
         <div className="pt-80 pb-80"></div>

@@ -7,10 +7,10 @@ const CompactCard = (props: any) => {
   return (
     <>
       <div className="inline-flex w-auto flex-col rounded-md border border-gray-200 px-7 py-6">
-        <div className="pb-9 text-gray-900">{icon}</div>
+        <div className="mb-10 text-gray-900">{icon}</div>
         <div>
-          <h2 className="pb-2 text-sm font-semibold text-gray-900">{title}</h2>
-          <p className="text-sm text-[#6D7480]">{text}</p>
+          <h2 className="mb-3 text-sm font-semibold text-gray-900">{title}</h2>
+          <p className="text-sm text-gray-600">{text}</p>
         </div>
       </div>
     </>
