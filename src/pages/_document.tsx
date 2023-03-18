@@ -15,6 +15,7 @@ const Document = () => {
       <body
         className={clsx(
           "font-inter",
+          "bg-[#fefefe]",
           process.env.DEV == "true" && "debug-screens"
         )}
       >
