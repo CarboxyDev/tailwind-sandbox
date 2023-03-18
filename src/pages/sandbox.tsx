@@ -20,7 +20,9 @@ const Sandbox: NextPage = () => {
       <Navbar />
       <div className="px-12 pt-12">
         <div className="pt-24"></div>
-        <div className="2xl:grids-cols-4 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
+        <div></div>
+        <div className="pt-80 pb-80"></div>
+        <div className="2xl:grids-cols-4 grid grid-cols-1 gap-x-4 gap-y-4 md:grid-cols-2 xl:grid-cols-3">
           <CardWithImage
             image="/generic-image-1.png"
             heading="Some Heading"
@@ -30,6 +32,11 @@ const Sandbox: NextPage = () => {
             image="/skyrim-1.jpeg"
             heading="TES V: Skyrim"
             content="It's a nice game. Buy it and pump Godd Todd's bank."
+          />
+          <CardWithImage
+            image="/skyrim-2.jpeg"
+            heading="Some Heading"
+            content="This is some example text for this card design. Let's fit some more content in here so that it feels not-so-empty. Alright, that's enough for now."
           />
         </div>
         <div className="pt-80 pb-80"></div>
