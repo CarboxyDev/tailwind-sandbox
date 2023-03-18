@@ -3,7 +3,7 @@ const CardWithImage = (props: any) => {
 
   return (
     <>
-      <div className="w-80 max-w-xs self-start rounded-2xl px-8 pt-8 pb-12 shadow lg:w-100">
+      <div className="max-w-screen-sm:max-w-xs w-80 self-start rounded-2xl px-8 pt-8 pb-12 shadow lg:w-100">
         <div className="mb-8 h-40">
           <img
             src={image}
