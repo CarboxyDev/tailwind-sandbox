@@ -1,7 +1,5 @@
 import { NextPage } from "next";
-import Button from "../components/Button";
 import CompactCard from "../components/CompactCard";
-import Dialog from "../components/Dialog";
 import {
   BoltIcon,
   LockClosedIcon,
@@ -14,6 +12,8 @@ import Footer from "../components/Footer";
 import LoginForm from "../components/LoginForm";
 import CardWithImage from "../components/CardWithImage";
 import CardWithImageAndButton from "../components/CardWithImageAndButton";
+import Popover from "../components/Popover";
+import Button from "../components/Button";
 
 const Sandbox: NextPage = () => {
   return (
@@ -21,8 +21,12 @@ const Sandbox: NextPage = () => {
       <Navbar />
       <div className="px-4 pt-12 sm:px-10 md:px-12">
         <div className="pt-24"></div>
-        <div></div>
         <div className="pt-80 pb-80"></div>
+        <div className="px-20 pb-8">
+          <Popover popoverContent="We sample your data and compare it against our database and then return the match">
+            <span className="text-gray-600 underline">how it works</span>
+          </Popover>
+        </div>
         <div className="grid gap-x-4 gap-y-4 md:grid-cols-2">
           <CardWithImageAndButton
             image="/generic-image-2.jpg"

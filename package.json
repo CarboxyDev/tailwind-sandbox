@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.0.16",
+    "@radix-ui/react-popover": "1.0.5",
     "clsx": "^1.2.1",
     "framer-motion": "^10.3.1",
     "next": "13.1.1",
