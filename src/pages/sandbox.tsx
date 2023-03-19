@@ -13,7 +13,6 @@ import LoginForm from "../components/LoginForm";
 import CardWithImage from "../components/CardWithImage";
 import CardWithImageAndButton from "../components/CardWithImageAndButton";
 import Popover from "../components/Popover";
-import Button from "../components/Button";
 
 const Sandbox: NextPage = () => {
   return (
@@ -127,7 +126,7 @@ const Sandbox: NextPage = () => {
           />
           <PricingCard
             plan={{
-              type: "MOST FAMOUS",
+              type: "MOST POPULAR",
               name: "Premium ✨",
               price: "$25.99",
             }}
