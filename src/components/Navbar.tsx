@@ -1,4 +1,3 @@
-import { Bars3Icon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import HamburgerDropdown from "./HamburgerDropdown";
 
@@ -32,9 +31,7 @@ const Navbar = () => {
             Sign up
           </button>
           <div className="lg:hidden">
-            <HamburgerDropdown navItems={navItems}>
-              <Bars3Icon className="h-12 w-12 text-gray-600 data-[state=open]:text-primary" />
-            </HamburgerDropdown>
+            <HamburgerDropdown navItems={navItems} />
           </div>
         </div>
       </div>
