@@ -1,7 +1,7 @@
 import * as RadixDropdownMenu from "@radix-ui/react-dropdown-menu";
 import Link from "next/link";
 
-const Dropdown = (props: any) => {
+const HamburgerDropdown = (props: any) => {
   let { navItems, children } = props;
   return (
     <>
@@ -28,4 +28,4 @@ const Dropdown = (props: any) => {
   );
 };
 
-export default Dropdown;
+export default HamburgerDropdown;
