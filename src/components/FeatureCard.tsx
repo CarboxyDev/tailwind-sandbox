@@ -14,7 +14,7 @@ const FeatureItem = (props: FeatureItemProps) => {
 
   return (
     <>
-      <div className="mx-8 my-6 flex flex-row items-center justify-center lg:my-14">
+      <div className="mx-8 my-6 flex flex-row items-center justify-center lg:mx-4 lg:my-14 xl:mx-8">
         <div className="mt-1 self-start">
           <div
             className={tw(
@@ -60,7 +60,7 @@ const FeatureCard = (props: FeatureCardProps) => {
   const { variant } = props;
   return (
     <>
-      <div className="flex justify-center">
+      <div className="flex justify-center lg:-mx-20 xl:mx-0">
         <div
           className={clsx(
             "grid max-w-md grid-cols-none grid-rows-3 rounded-2xl lg:max-w-none lg:grid-cols-3 lg:grid-rows-none",
