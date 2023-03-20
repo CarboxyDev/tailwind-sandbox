@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { clientEnv } from "../env/schema.mjs";
 
 const TestimonialCard = (props: any) => {
   let { comment, author } = props;
