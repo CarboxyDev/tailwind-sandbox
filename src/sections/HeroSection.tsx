@@ -1,5 +1,6 @@
 //import { ArrowSmallRightIcon } from "@heroicons/react/24/solid";
 
+import { motion } from "framer-motion";
 import { ArrowSmallRightIcon } from "../utils/icons";
 
 // NOTE: This is a section and not a component so it'll probably have very little modularity
@@ -7,9 +8,9 @@ import { ArrowSmallRightIcon } from "../utils/icons";
 const HeroSection = () => {
   return (
     <>
-      <div className="grid grid-rows-2 gap-x-8 gap-y-6 px-4 pt-32 sm:px-8 lg:grid-cols-2 lg:px-28">
+      <div className="mx-4 grid grid-rows-2 gap-x-8 gap-y-6 pt-32 sm:mx-8 lg:mx-28 lg:grid-cols-2">
         <div className="mx-3 mt-6 flex flex-col sm:mx-0">
-          <div className="mx-auto max-w-lg">
+          <div className="mx-auto sm:max-w-lg lg:max-w-none">
             <h1 className="text-3xl font-bold text-gray-800 lg:text-4xl xl:text-5xl">
               This is a great headline in two lines
             </h1>
@@ -29,13 +30,13 @@ const HeroSection = () => {
           </div>
         </div>
         <div className="order-first lg:order-last">
-          <div className="">
+          <motion.div className="flex flex-col">
             <img
               src="/generic-hero-image-1.png"
               alt="hero-image"
-              className="mx-auto w-[456px] lg:ml-auto"
+              className="mx-auto w-[456px] lg:mx-0 lg:ml-auto"
             />
-          </div>
+          </motion.div>
         </div>
       </div>
     </>
