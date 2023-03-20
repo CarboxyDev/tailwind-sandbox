@@ -1,10 +1,11 @@
-export const GoogleIcon = () => {
+export const GoogleIcon = (props: { className: string }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
       viewBox="0 0 24 24"
+      {...props}
     >
       <path
         fill="currentColor"
@@ -14,13 +15,14 @@ export const GoogleIcon = () => {
   );
 };
 
-export const GithubIcon = () => {
+export const GithubIcon = (props: { className: string }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
       viewBox="0 0 24 24"
+      {...props}
     >
       <path
         fill="currentColor"
@@ -30,13 +32,14 @@ export const GithubIcon = () => {
   );
 };
 
-export const TwitterIcon = () => {
+export const TwitterIcon = (props: { className: string }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
       viewBox="0 0 24 24"
+      {...props}
     >
       <path
         fill="currentColor"
