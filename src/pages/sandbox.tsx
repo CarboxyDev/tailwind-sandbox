@@ -29,7 +29,9 @@ const Sandbox: NextPage = () => {
         <Divider />
         <HeroSection />
         <Filler height="h-100" />
-        <FeatureCard />
+        <FeatureCard variant="dark" />
+        <Filler height="h-100" />
+        <FeatureCard variant="light" />
         <Filler height="h-100" />
         <ContentWithImageSection
           image="/skyrim-1.jpeg"

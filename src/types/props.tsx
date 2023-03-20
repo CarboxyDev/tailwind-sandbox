@@ -83,4 +83,10 @@ export type FeatureItemProps = {
   heading: string;
   content: string;
   icon: JSX.Element;
+  variant?: "light" | "dark";
+};
+
+/* Strictly 6 features allowed in the card */
+export type FeatureCardProps = {
+  variant: "light" | "dark";
 };
