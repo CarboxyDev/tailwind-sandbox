@@ -9,7 +9,7 @@ const FeatureItem = (props: FeatureItemProps) => {
 
   return (
     <>
-      <div className="mx-8 my-14 flex flex-row items-center justify-center">
+      <div className="mx-8 my-6 flex flex-row items-center justify-center lg:my-14">
         <div>
           <div className="flex h-14 w-14 items-center justify-center rounded-full bg-primary-300/60">
             {icon}
@@ -27,49 +27,51 @@ const FeatureItem = (props: FeatureItemProps) => {
 const FeatureCard = () => {
   return (
     <>
-      <div className="grid max-w-md grid-cols-none grid-rows-3 rounded-2xl border border-gray-200 lg:max-w-none lg:grid-cols-3 lg:grid-rows-none">
-        <div className="grid grid-rows-2 border-r border-gray-200">
-          <FeatureItem
-            heading="Analytics"
-            content="Track your payments, and more with our advanced analytics dashboard."
-            icon={<ArrowUpTrayIcon className="h-6 w-6 text-primary-700" />}
-          />
-          <FeatureItem
-            heading="Analytics"
-            content="Track your payments, and more with our advanced analytics dashboard."
-            icon={
-              <ChatBubbleLeftEllipsisIcon className="h-6 w-6 text-primary-700" />
-            }
-          />
-        </div>
+      <div className="flex justify-center">
+        <div className="grid max-w-md grid-cols-none grid-rows-3 rounded-2xl border border-gray-200 lg:max-w-none lg:grid-cols-3 lg:grid-rows-none">
+          <div className="grid grid-rows-2 border-b border-gray-200 lg:border-r">
+            <FeatureItem
+              heading="Analytics"
+              content="Track your payments, and more with our advanced analytics dashboard."
+              icon={<ArrowUpTrayIcon className="h-6 w-6 text-primary-700" />}
+            />
+            <FeatureItem
+              heading="Analytics"
+              content="Track your payments, and more with our advanced analytics dashboard."
+              icon={
+                <ChatBubbleLeftEllipsisIcon className="h-6 w-6 text-primary-700" />
+              }
+            />
+          </div>
 
-        <div className="grid grid-rows-2 border-r border-gray-200">
-          <FeatureItem
-            heading="Analytics"
-            content="Track your payments, and more with our advanced analytics dashboard."
-            icon={<ArrowUpTrayIcon className="h-6 w-6 text-primary-700" />}
-          />
-          <FeatureItem
-            heading="Analytics"
-            content="Track your payments, and more with our advanced analytics dashboard."
-            icon={
-              <ChatBubbleLeftEllipsisIcon className="h-6 w-6 text-primary-700" />
-            }
-          />
-        </div>
-        <div className="grid grid-rows-2">
-          <FeatureItem
-            heading="Analytics"
-            content="Track your payments, and more with our advanced analytics dashboard."
-            icon={<ArrowUpTrayIcon className="h-6 w-6 text-primary-700" />}
-          />
-          <FeatureItem
-            heading="Analytics"
-            content="Track your payments, and more with our advanced analytics dashboard."
-            icon={
-              <ChatBubbleLeftEllipsisIcon className="h-6 w-6 text-primary-700" />
-            }
-          />
+          <div className="grid grid-rows-2 border-b border-gray-200 lg:border-r">
+            <FeatureItem
+              heading="Analytics"
+              content="Track your payments, and more with our advanced analytics dashboard."
+              icon={<ArrowUpTrayIcon className="h-6 w-6 text-primary-700" />}
+            />
+            <FeatureItem
+              heading="Analytics"
+              content="Track your payments, and more with our advanced analytics dashboard."
+              icon={
+                <ChatBubbleLeftEllipsisIcon className="h-6 w-6 text-primary-700" />
+              }
+            />
+          </div>
+          <div className="grid grid-rows-2">
+            <FeatureItem
+              heading="Analytics"
+              content="Track your payments, and more with our advanced analytics dashboard."
+              icon={<ArrowUpTrayIcon className="h-6 w-6 text-primary-700" />}
+            />
+            <FeatureItem
+              heading="Analytics"
+              content="Track your payments, and more with our advanced analytics dashboard."
+              icon={
+                <ChatBubbleLeftEllipsisIcon className="h-6 w-6 text-primary-700" />
+              }
+            />
+          </div>
         </div>
       </div>
     </>
