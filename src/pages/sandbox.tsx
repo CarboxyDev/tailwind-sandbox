@@ -29,7 +29,7 @@ const Sandbox: NextPage = () => {
         {
           // <Filler height={100} />
         }
-        <div className="h-25"></div>
+        <div className="h-100"></div>
         <HeaderSection
           variant="light"
           heading="Great heading"
@@ -43,6 +43,7 @@ const Sandbox: NextPage = () => {
           content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
             molestias minus, inventore autem animi voluptatem reprehenderit
             debitis praesentium qui, nemo quasi."
+          animate={true}
         />
       </div>
 

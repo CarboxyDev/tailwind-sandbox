@@ -2,6 +2,8 @@ export type HeaderSectionProps = {
   variant: "light" | "dark";
   heading: string;
   content: string;
+  animate?: boolean;
+  className?: string; // only use for HeaderContent FC
 };
 
 /* FillerProps can only have either height or width but must have one of them */
