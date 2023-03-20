@@ -25,7 +25,7 @@ const Sandbox: NextPage = () => {
         <Navbar />
         <Divider />
         <HeroSection />
-        <HeaderSection />
+        <HeaderSection variant="dark" />
       </div>
 
       {/*
