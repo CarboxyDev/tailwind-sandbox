@@ -1,10 +1,10 @@
 import { NextPage } from "next";
-import CompactCard from "../components/CompactCard";
 import {
   BoltIcon,
   LockClosedIcon,
   ArrowDownTrayIcon,
 } from "@heroicons/react/24/solid";
+import CompactCard from "../components/CompactCard";
 import PricingCard from "../components/PricingCard";
 import TestimonialCard from "../components/TestimonialCard";
 import Navbar from "../components/Navbar";
@@ -20,6 +20,7 @@ import Divider from "../components/Divider";
 import Filler from "../components/Filler";
 import ContentWithImageSection from "../sections/ContentWithImageSection";
 import FeatureCard from "../components/FeatureCard";
+import CTASection from "../sections/CTASection";
 
 const Sandbox: NextPage = () => {
   return (
@@ -28,6 +29,12 @@ const Sandbox: NextPage = () => {
         <Navbar />
         <Divider />
         <HeroSection />
+        <Filler height="h-100" />
+        <CTASection
+          heading="Take the leap and get started"
+          buttonText="Get started"
+          backgroundImage="global-bg-1"
+        />
         <Filler height="h-100" />
         <FeatureCard variant="dark" />
         <Filler height="h-100" />

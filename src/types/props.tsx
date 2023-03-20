@@ -90,3 +90,9 @@ export type FeatureItemProps = {
 export type FeatureCardProps = {
   variant: "light" | "dark";
 };
+
+export type CTASectionProps = {
+  heading: string;
+  buttonText: string;
+  backgroundImage: string;
+};
