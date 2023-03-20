@@ -1,7 +1,7 @@
 import * as RadixPopover from "@radix-ui/react-popover";
 
 const Popover = (props: any) => {
-  let { children, popoverContent } = props;
+  const { children, text } = props;
 
   return (
     <>
@@ -9,11 +9,12 @@ const Popover = (props: any) => {
         <RadixPopover.Trigger>{children}</RadixPopover.Trigger>
         <RadixPopover.Portal>
           <RadixPopover.Content
-            collisionPadding={{ left: 16 }}
-            className="max-w-xs rounded-2xl bg-gray-700 px-5 py-3 text-sm text-white shadow"
+            collisionPadding={{ left: 16, right: 16 }}
+            sideOffset={4}
+            className="max-w-xs rounded-lg bg-neutral-800 px-6 py-4 text-sm text-white shadow"
           >
-            {popoverContent}
-            <RadixPopover.Arrow className="fill-gray-700" />
+            {text}
+            <RadixPopover.Arrow className="fill-neutral-800" />
           </RadixPopover.Content>
         </RadixPopover.Portal>
       </RadixPopover.Root>

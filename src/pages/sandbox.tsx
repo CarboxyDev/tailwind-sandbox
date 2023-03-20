@@ -13,6 +13,7 @@ import LoginForm from "../components/LoginForm";
 import CardWithImage from "../components/CardWithImage";
 import CardWithImageAndButton from "../components/CardWithImageAndButton";
 import Popover from "../components/Popover";
+import Tooltip from "../components/Tooltip";
 
 const Sandbox: NextPage = () => {
   return (
@@ -20,9 +21,14 @@ const Sandbox: NextPage = () => {
       <Navbar />
       <div className="px-4 pt-12 sm:px-10 md:px-12">
         <div className="pt-24"></div>
+        <Tooltip text="Thanks for hovering!">
+          <span className="text-gray-600 underline decoration-dotted hover:text-primary">
+            hover over me!
+          </span>
+        </Tooltip>
         <div className="pt-80 pb-80"></div>
         <div className="px-20 pb-8">
-          <Popover popoverContent="We sample your data and compare it against our database and then return the match">
+          <Popover text="We sample your data and compare it against our database and then return the match">
             <span className="text-gray-600 underline">how it works</span>
           </Popover>
         </div>
