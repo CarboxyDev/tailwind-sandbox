@@ -30,7 +30,15 @@ const HeroSection = () => {
           </div>
         </div>
         <div className="order-first lg:order-last">
-          <motion.div className="flex flex-col">
+          <motion.div
+            className="flex flex-col"
+            initial={{ opacity: 0, scale: 0.75 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.25, ease: "easeOut" }}
+            whileHover={{
+              scale: 1.02,
+            }}
+          >
             <img
               src="/generic-hero-image-1.png"
               alt="hero-image"
