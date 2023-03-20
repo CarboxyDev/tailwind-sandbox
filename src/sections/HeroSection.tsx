@@ -8,14 +8,14 @@ const HeroSection = () => {
   return (
     <>
       <div className="grid grid-cols-2 gap-x-8 px-28 pt-32">
-        <div>
+        <div className="mt-6">
           <h1 className="text-5xl font-bold text-gray-800">
-            This is a banger headline in two lines
+            This is a great headline in two lines
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-600">
             This will be some secondary text which will convey a lengthy yet
-            brief message and assure the visitor of what the product's pros as
-            well as its qualities.
+            brief message and assure the visitor of what the product's pros are
+            as well as its qualities.
           </p>
           <div className="mt-15 flex flex-row">
             <button className="text-md rounded-lg bg-primary px-7 py-4 font-semibold text-white shadow hover:bg-primary-400">
@@ -26,7 +26,15 @@ const HeroSection = () => {
             </button>
           </div>
         </div>
-        <div>hero-img-col</div>
+        <div className="flex flex-col">
+          <div>
+            <img
+              src="/generic-hero-image-1.png"
+              alt="hero-image"
+              className="ml-auto w-[456px]"
+            />
+          </div>
+        </div>
       </div>
     </>
   );

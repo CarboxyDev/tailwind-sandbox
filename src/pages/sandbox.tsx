@@ -20,6 +20,7 @@ const Sandbox: NextPage = () => {
   return (
     <>
       <Navbar />
+      <div className="mx-4 h-px bg-gray-200 sm:mx-8 lg:mx-28" />
       <HeroSection />
       <div className="px-4 pt-12 sm:px-10 md:px-12">
         <div className="pt-24"></div>
