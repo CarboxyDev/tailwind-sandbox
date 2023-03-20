@@ -8,7 +8,7 @@ import { ArrowSmallRightIcon } from "../utils/icons";
 const HeroSection = () => {
   return (
     <>
-      <div className="mx-4 grid grid-rows-2 gap-x-8 gap-y-6 pt-32 sm:mx-8 lg:mx-28 lg:grid-cols-2">
+      <div className="grid grid-rows-2 gap-x-8 gap-y-6 pt-32 lg:grid-cols-2">
         <div className="mx-3 mt-6 flex flex-col sm:mx-0">
           <div className="mx-auto sm:max-w-lg lg:max-w-none">
             <h1 className="text-3xl font-bold text-gray-800 lg:text-4xl xl:text-5xl">

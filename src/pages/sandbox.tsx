@@ -15,16 +15,28 @@ import CardWithImageAndButton from "../components/CardWithImageAndButton";
 import Popover from "../components/Popover";
 import Tooltip from "../components/Tooltip";
 import HeroSection from "../sections/HeroSection";
+import HeaderSection from "../sections/HeaderSection";
+import Divider from "../components/Divider";
 
 const Sandbox: NextPage = () => {
   return (
     <>
-      <Navbar />
-      <div className="mx-4 h-px bg-gray-200 sm:mx-8 lg:mx-28" />
-      <HeroSection />
+      <div id="app-container" className="px-4 sm:px-8 lg:px-28">
+        <Navbar />
+        <Divider />
+        <HeroSection />
+        <HeaderSection />
+      </div>
+
+      {/*
+          JSX above is part of the core assembly section for testing layouts, app design, etc.
+          JSX below is part of the pure sandbox section
+        */}
+
+      <div className="pt-80 pb-80"></div>
       <div className="px-4 pt-12 sm:px-10 md:px-12">
         <div className="pt-24"></div>
-        <div className="pt-80 pb-80"></div>
+        <div className="pt-40 pb-40"></div>
         <Tooltip text="Thanks for hovering!">
           <span className="text-gray-600 underline decoration-dotted hover:text-primary">
             hover over me!
