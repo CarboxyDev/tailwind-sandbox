@@ -36,6 +36,18 @@ const Sandbox: NextPage = () => {
           backgroundImage="global-bg-1"
         />
         <Filler height="h-100" />
+        <CTASection
+          heading="Get excited to jump forward"
+          buttonText="Get started"
+          backgroundImage="global-bg-2"
+        />
+        <Filler height="h-100" />
+        <CTASection
+          heading="Get excited to jump forward"
+          buttonText="Get started"
+          backgroundImage="global-bg-3"
+        />
+        <Filler height="h-100" />
         <FeatureCard variant="dark" />
         <Filler height="h-100" />
         <FeatureCard variant="light" />

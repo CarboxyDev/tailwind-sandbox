@@ -16,7 +16,7 @@ const CTASection = (props: CTASectionProps) => {
           <h2 className="text-center text-3xl font-semibold text-white md:text-4xl lg:text-5xl">
             {heading}
           </h2>
-          <div className="mt-12 w-50 md:w-60">
+          <div className="mt-16 w-50 md:w-60">
             <button className="text-md w-full rounded-lg bg-white py-4 font-semibold text-[#387aff] hover:bg-slate-200">
               {buttonText}
             </button>
