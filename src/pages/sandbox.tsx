@@ -18,6 +18,7 @@ import HeroSection from "../sections/HeroSection";
 import HeaderSection from "../sections/HeaderSection";
 import Divider from "../components/Divider";
 import Filler from "../components/Filler";
+import ContentWithImageSection from "../sections/ContentWithImageSection";
 
 const Sandbox: NextPage = () => {
   return (
@@ -28,7 +29,13 @@ const Sandbox: NextPage = () => {
         <HeroSection />
 
         <Filler height="h-100" />
-
+        <ContentWithImageSection
+          image="/skyrim-1.jpeg"
+          heading="Skyrim is one of the most famous games of the century"
+          content="It is also the most influential RPGs of all time. It is still well respected and heavily modded to this day."
+          reverse={true}
+        />
+        <Filler height="h-100" />
         <HeaderSection
           variant="light"
           heading="Great heading"

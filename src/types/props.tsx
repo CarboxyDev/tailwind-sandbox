@@ -6,6 +6,13 @@ export type HeaderSectionProps = {
   className?: string; // only use for HeaderContent FC
 };
 
+export type ContentWithImageSection = {
+  heading: string;
+  content: string;
+  image: string;
+  reverse?: boolean;
+};
+
 /*
  * FillerProps can only have either height or width but must have one of them.
  * FillerProps only takes tailwind classes like "h-10", "w-12".
