@@ -17,6 +17,7 @@ import Tooltip from "../components/Tooltip";
 import HeroSection from "../sections/HeroSection";
 import HeaderSection from "../sections/HeaderSection";
 import Divider from "../components/Divider";
+import Filler from "../components/Filler";
 
 const Sandbox: NextPage = () => {
   return (
@@ -25,6 +26,7 @@ const Sandbox: NextPage = () => {
         <Navbar />
         <Divider />
         <HeroSection />
+        <Filler height={100} />
         <HeaderSection variant="dark" />
       </div>
 
