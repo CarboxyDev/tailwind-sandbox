@@ -14,7 +14,7 @@ const FeatureItem = (props: FeatureItemProps) => {
 
   return (
     <>
-      <div className="mx-8 my-6 flex flex-row items-center justify-center lg:mx-4 lg:my-14 xl:mx-8">
+      <div className="mx-8 my-6 flex flex-row items-center justify-center lg:mx-4 lg:my-10 xl:mx-8">
         <div className="mt-1 self-start">
           <div
             className={tw(
