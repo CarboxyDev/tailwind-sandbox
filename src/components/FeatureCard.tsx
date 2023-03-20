@@ -1,6 +1,10 @@
 import {
+  AcademicCapIcon,
   ArrowUpTrayIcon,
+  BoltIcon,
+  ChartBarIcon,
   ChatBubbleLeftEllipsisIcon,
+  CloudIcon,
   LockClosedIcon,
 } from "@heroicons/react/24/solid";
 import { clsx } from "clsx";
@@ -76,9 +80,9 @@ const FeatureCard = (props: FeatureCardProps) => {
             )}
           >
             <FeatureItem
-              heading="Analytics"
-              content="Track your payments, and more with our advanced analytics dashboard."
-              icon={<ArrowUpTrayIcon />}
+              heading="Blazingly Fast"
+              content="Our servers deliver messages at extremely fast speeds"
+              icon={<BoltIcon />}
               {...props}
             />
             <FeatureItem
@@ -97,29 +101,29 @@ const FeatureCard = (props: FeatureCardProps) => {
             )}
           >
             <FeatureItem
-              heading="Analytics"
-              content="Track your payments, and more with our advanced analytics dashboard."
+              heading="Fastest Uploads"
+              content="We provide the fastest upload speeds on the market"
               icon={<ArrowUpTrayIcon />}
               {...props}
             />
             <FeatureItem
-              heading="Analytics"
-              content="Track your payments, and more with our advanced analytics dashboard."
-              icon={<ChatBubbleLeftEllipsisIcon />}
+              heading="On The Cloud"
+              content="Everything is stored on the cloud saving you tons of space"
+              icon={<CloudIcon />}
               {...props}
             />
           </div>
           <div className="grid grid-rows-2">
             <FeatureItem
               heading="Analytics"
-              content="Track your payments, and more with our advanced analytics dashboard."
-              icon={<ArrowUpTrayIcon />}
+              content="Track every message and sale using our cutting-edge analytics."
+              icon={<ChartBarIcon />}
               {...props}
             />
             <FeatureItem
-              heading="Analytics"
-              content="Track your payments, and more with our advanced analytics dashboard."
-              icon={<ChatBubbleLeftEllipsisIcon />}
+              heading="Education"
+              content="We provide special discounted prices for college students"
+              icon={<AcademicCapIcon />}
               {...props}
             />
           </div>
