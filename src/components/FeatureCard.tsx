@@ -1,9 +1,13 @@
 import {
   ArrowUpTrayIcon,
   ChatBubbleLeftEllipsisIcon,
+  LockClosedIcon,
 } from "@heroicons/react/24/solid";
-import clsx from "clsx";
+import { clsx } from "clsx";
+import { twMerge as tw } from "tailwind-merge";
+
 import { FeatureCardProps, FeatureItemProps } from "../types/props";
+import { clsxtw } from "../utils/misc";
 
 const FeatureItem = (props: FeatureItemProps) => {
   const { heading, content, icon, variant } = props;
@@ -11,8 +15,19 @@ const FeatureItem = (props: FeatureItemProps) => {
   return (
     <>
       <div className="mx-8 my-6 flex flex-row items-center justify-center lg:my-14">
-        <div>
-          <div className="flex h-14 w-14 items-center justify-center rounded-full bg-primary-300/60">
+        <div className="mt-1 self-start">
+          <div
+            className={tw(
+              clsxtw(
+                "flex h-14 w-14 items-center justify-center rounded-full",
+                "[&>*]:h-6 [&>*]:w-6",
+                variant === "light" &&
+                  "bg-primary-300/60 text-primary-700 hover:bg-primary-300",
+                variant === "dark" &&
+                  "bg-primary text-primary-100 hover:bg-primary-400"
+              )
+            )}
+          >
             {icon}
           </div>
         </div>
@@ -63,15 +78,13 @@ const FeatureCard = (props: FeatureCardProps) => {
             <FeatureItem
               heading="Analytics"
               content="Track your payments, and more with our advanced analytics dashboard."
-              icon={<ArrowUpTrayIcon className="h-6 w-6 text-primary-700" />}
+              icon={<ArrowUpTrayIcon />}
               {...props}
             />
             <FeatureItem
-              heading="Analytics"
-              content="Track your payments, and more with our advanced analytics dashboard."
-              icon={
-                <ChatBubbleLeftEllipsisIcon className="h-6 w-6 text-primary-700" />
-              }
+              heading="Enhanced Safety"
+              content="Our secure protocols are can handle all events with finest safety"
+              icon={<LockClosedIcon />}
               {...props}
             />
           </div>
@@ -86,15 +99,13 @@ const FeatureCard = (props: FeatureCardProps) => {
             <FeatureItem
               heading="Analytics"
               content="Track your payments, and more with our advanced analytics dashboard."
-              icon={<ArrowUpTrayIcon className="h-6 w-6 text-primary-700" />}
+              icon={<ArrowUpTrayIcon />}
               {...props}
             />
             <FeatureItem
               heading="Analytics"
               content="Track your payments, and more with our advanced analytics dashboard."
-              icon={
-                <ChatBubbleLeftEllipsisIcon className="h-6 w-6 text-primary-700" />
-              }
+              icon={<ChatBubbleLeftEllipsisIcon />}
               {...props}
             />
           </div>
@@ -102,15 +113,13 @@ const FeatureCard = (props: FeatureCardProps) => {
             <FeatureItem
               heading="Analytics"
               content="Track your payments, and more with our advanced analytics dashboard."
-              icon={<ArrowUpTrayIcon className="h-6 w-6 text-primary-700" />}
+              icon={<ArrowUpTrayIcon />}
               {...props}
             />
             <FeatureItem
               heading="Analytics"
               content="Track your payments, and more with our advanced analytics dashboard."
-              icon={
-                <ChatBubbleLeftEllipsisIcon className="h-6 w-6 text-primary-700" />
-              }
+              icon={<ChatBubbleLeftEllipsisIcon />}
               {...props}
             />
           </div>
