@@ -34,7 +34,7 @@ const HeroSection = () => {
             <img
               src="/generic-hero-image-1.png"
               alt="hero-image"
-              className="mx-auto w-[456px] lg:mx-0 lg:ml-auto"
+              className="lg: mx-auto w-[456px] lg:mx-0 lg:ml-auto lg:w-[342px] xl:w-[456px]"
             />
           </motion.div>
         </div>
