@@ -26,10 +26,9 @@ const Sandbox: NextPage = () => {
         <Navbar />
         <Divider />
         <HeroSection />
-        {
-          // <Filler height={100} />
-        }
-        <div className="h-100"></div>
+
+        <Filler height="h-100" />
+
         <HeaderSection
           variant="light"
           heading="Great heading"
