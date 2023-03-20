@@ -120,64 +120,73 @@ const Sandbox: NextPage = () => {
               type: "basic",
               name: "Standard",
               price: "$9.99",
+              benefits: [
+                "Faster downloads",
+                "Comprehensive file analytics",
+                "Priority mail support",
+                "Custom domain & API",
+                "Access to VIP lounge",
+              ],
             }}
-            benefits={[
-              "Faster downloads",
-              "Comprehensive file analytics",
-              "Priority mail support",
-              "Custom domain & API",
-              "Access to VIP lounge",
-            ]}
-            buttonText="Subscribe monthly"
-            buttonType="primary"
+            button={{
+              buttonText: "Subscribe monthly",
+              buttonType: "primary",
+            }}
           />
           <PricingCard
             plan={{
               type: "intermediate",
               name: "Professional",
               price: "$15.99",
+              benefits: [
+                "Ultra fast file transfers",
+                "One click file analytics",
+                "Priority mail and call support",
+                "Custom domain & API",
+                "Access to VIP lounge",
+              ],
             }}
-            benefits={[
-              "Ultra fast file transfers",
-              "One click file analytics",
-              "Priority mail and call support",
-              "Custom domain & API",
-              "Access to VIP lounge",
-            ]}
-            buttonText="Subscribe monthly"
-            buttonType="primary"
+            button={{
+              buttonText: "Subscribe monthly",
+              buttonType: "primary",
+            }}
           />
+
           <PricingCard
             plan={{
               type: "MOST POPULAR",
               name: "Premium ✨",
               price: "$25.99",
+              benefits: [
+                "Almost instant file transfers",
+                "Fifteen different analytical tools",
+                "Priority mail and call support",
+                "Unlimited custom domains & API",
+                "Access to Premium lounge",
+              ],
             }}
-            benefits={[
-              "Almost instant file transfers",
-              "Fifteen different analytical tools",
-              "Priority mail and call support",
-              "Unlimited custom domains & API",
-              "Access to Premium lounge",
-            ]}
-            buttonText="Subscribe monthly"
-            buttonType="secondary"
+            button={{
+              buttonText: "Subscribe monthly",
+              buttonType: "secondary",
+            }}
           />
           <PricingCard
             plan={{
               type: "BEST",
               name: "Enterprise",
               price: "Custom",
+              benefits: [
+                "Enterprise level file transfers",
+                "Custom analytical tools",
+                "Enterprise level support",
+                "Unlimited custom domains & API",
+                "Access to Enterprise cell",
+              ],
             }}
-            benefits={[
-              "Enterprise level file transfers",
-              "Custom analytical tools",
-              "Enterprise level support",
-              "Unlimited custom domains & API",
-              "Access to Enterprise cell",
-            ]}
-            buttonText="Contact support"
-            buttonType="supreme"
+            button={{
+              buttonText: "Contact support",
+              buttonType: "secondary",
+            }}
           />
         </div>
         <div className="pt-24"></div>

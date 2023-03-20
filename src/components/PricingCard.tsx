@@ -1,7 +1,12 @@
 import { CheckIcon } from "@heroicons/react/24/solid";
 import { clsx } from "clsx";
+import { PricingCardProps } from "../types/props";
 
-const PricingListItem = (props: any) => {
+type PricingListItemType = {
+  text: string;
+};
+
+const PricingListItem = (props: PricingListItemType) => {
   let { text } = props;
 
   return (
@@ -16,9 +21,10 @@ const PricingListItem = (props: any) => {
   );
 };
 
-const PricingCard = (props: any) => {
-  let { plan, benefits, buttonText, buttonType } = props;
-  let { type, name, price } = plan;
+const PricingCard = (props: PricingCardProps) => {
+  const { plan, button } = props;
+  const { type, name, price, benefits } = plan;
+  const { buttonText, buttonType } = button;
 
   return (
     <>
@@ -32,7 +38,7 @@ const PricingCard = (props: any) => {
         </div>
         <div className="h-px w-full bg-gray-200" />
         <div className="pt-9 pb-7">
-          {benefits.map((b: String) => {
+          {benefits.map((b: string) => {
             return <PricingListItem text={b} />;
           })}
         </div>
@@ -42,9 +48,8 @@ const PricingCard = (props: any) => {
             className={clsx(
               "flex h-10 w-full min-w-[232px] items-center justify-center rounded-lg text-sm font-semibold text-white",
               buttonType == "primary" && "bg-primary hover:bg-primary-600",
-              buttonType == "secondary" &&
-                "bg-secondary hover:bg-secondary-700",
-              buttonType == "supreme" && "bg-[#6D4DF5] hover:bg-[#5836E7]"
+              buttonType == "secondary" && "bg-[#6D4DF5] hover:bg-[#5836E7]",
+              buttonType == "tertiary" && "bg-secondary hover:bg-secondary-700"
             )}
           >
             {buttonText}

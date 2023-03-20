@@ -1,6 +1,7 @@
 import * as RadixPopover from "@radix-ui/react-popover";
+import { TooltipProps } from "../types/props";
 
-const Popover = (props: any) => {
+const Popover = (props: TooltipProps) => {
   const { children, text } = props;
 
   return (

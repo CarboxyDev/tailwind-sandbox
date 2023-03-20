@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
+import { TestimonialCardProps } from "../types/props";
 
-const TestimonialCard = (props: any) => {
+const TestimonialCard = (props: TestimonialCardProps) => {
   let { comment, author } = props;
   let { name, title, image } = author;
 

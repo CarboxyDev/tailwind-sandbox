@@ -2,11 +2,12 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import * as RadixDropdownMenu from "@radix-ui/react-dropdown-menu";
 import Link from "next/link";
 import { useState } from "react";
+import { HamburgerDropdownProps } from "../types/props";
 
 // TODO: Animate the hamburger menu icon when opening or closing the dropdown
 // TODO: Animate the Dropdown Content for entry and exit
 
-const HamburgerDropdown = (props: any) => {
+const HamburgerDropdown = (props: HamburgerDropdownProps) => {
   const { navItems } = props;
   const [open, setOpen] = useState(false);
 
