@@ -1,7 +1,8 @@
-// FIXME: Fix the variable width issue. All cards must have same width.
+import { CompactCardProps } from "../types/props";
+
 // TODO: Make this component responsive
 
-const CompactCard = (props: any) => {
+const CompactCard = (props: CompactCardProps) => {
   let { title, text, icon } = props;
 
   return (

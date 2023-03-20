@@ -1,4 +1,6 @@
-const CardWithImage = (props: any) => {
+import { CardWithImageProps } from "../types/props";
+
+const CardWithImage = (props: CardWithImageProps) => {
   const { image, heading, content } = props;
 
   return (

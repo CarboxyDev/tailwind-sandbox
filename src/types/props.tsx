@@ -41,3 +41,26 @@ export type PricingCardProps = {
     buttonType: "primary" | "secondary" | "tertiary";
   };
 };
+
+export type CompactCardProps = {
+  title: string;
+  text: string;
+  icon: JSX.Element;
+};
+
+export type CardWithImageProps = {
+  image: string;
+  heading: string;
+  content: string;
+};
+
+export type CardWithImageAndButtonProps = {
+  image: string;
+  heading: string;
+  content: string;
+  buttonText: string;
+};
+
+export type ButtonProps = {
+  children: JSX.Element;
+};

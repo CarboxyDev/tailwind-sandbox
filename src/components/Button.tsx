@@ -1,8 +1,10 @@
-import { ReactPropTypes } from "react";
+import React, { ReactPropTypes } from "react";
+import { ButtonProps } from "../types/props";
 
 // FIXME: Refactor this component to use 4px as the unit for layout and spacing, etc.
+// NOTE: This component is kind of deprecated and useless.
 
-const Button = (props: any) => {
+const Button = (props: ButtonProps) => {
   const children = props.children;
 
   return (
