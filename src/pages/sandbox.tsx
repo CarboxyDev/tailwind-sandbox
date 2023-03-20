@@ -19,6 +19,7 @@ import HeaderSection from "../sections/HeaderSection";
 import Divider from "../components/Divider";
 import Filler from "../components/Filler";
 import ContentWithImageSection from "../sections/ContentWithImageSection";
+import FeatureCard from "../components/FeatureCard";
 
 const Sandbox: NextPage = () => {
   return (
@@ -27,7 +28,8 @@ const Sandbox: NextPage = () => {
         <Navbar />
         <Divider />
         <HeroSection />
-
+        <Filler height="h-100" />
+        <FeatureCard />
         <Filler height="h-100" />
         <ContentWithImageSection
           image="/skyrim-1.jpeg"
@@ -43,6 +45,7 @@ const Sandbox: NextPage = () => {
             molestias minus, inventore autem animi voluptatem reprehenderit
             debitis praesentium qui, nemo quasi."
         />
+        <Filler height="h-8" />
         <HeaderSection
           variant="dark"
           heading="Another great heading"

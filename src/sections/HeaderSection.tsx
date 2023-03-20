@@ -6,11 +6,13 @@ const HeaderSectionContent = (props: HeaderSectionProps) => {
   const { variant, heading, content } = props;
   return (
     <div className={props.className}>
-      <div className="mx-2 flex max-w-md flex-col items-center justify-center md:max-w-2xl">
-        <h2 className="text-3xl font-bold md:text-6xl">{heading}</h2>
+      <div className="mx-3 flex max-w-md flex-col items-center justify-center md:max-w-2xl">
+        <h2 className="text-center text-3xl font-bold sm:text-4xl md:text-6xl">
+          {heading}
+        </h2>
         <p
           className={clsx(
-            "text-md mt-6 break-words text-center leading-8 md:text-lg",
+            "text-md mx-1 mt-10 break-words text-center leading-8 sm:mt-6 md:text-lg",
             variant === "dark" && "text-gray-300",
             variant === "light" && "text-gray-500"
           )}
@@ -26,8 +28,8 @@ const HeaderSection = (props: HeaderSectionProps) => {
   const { variant, heading, content, animate } = props;
   const variantStyles = clsx(
     "flex flex-col items-center justify-center rounded-lg py-24",
-    variant === "dark" && "bg-gray-800 text-white",
-    variant === "light" && "bg-white text-gray-800"
+    variant === "dark" && "bg-gray-800 shadow-md text-white",
+    variant === "light" && "bg-white text-gray-800 border"
   );
 
   if (animate) {

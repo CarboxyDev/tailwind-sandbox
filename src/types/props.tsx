@@ -78,3 +78,9 @@ export type CardWithImageAndButtonProps = {
 export type ButtonProps = {
   children: JSX.Element;
 };
+
+export type FeatureItemProps = {
+  heading: string;
+  content: string;
+  icon: JSX.Element;
+};
