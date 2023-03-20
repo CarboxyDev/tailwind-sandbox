@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import { CTASectionProps } from "../types/props";
+import type { CTASectionProps } from "../types/props";
 
 const CTASection = (props: CTASectionProps) => {
   const { heading, buttonText, backgroundImage } = props;

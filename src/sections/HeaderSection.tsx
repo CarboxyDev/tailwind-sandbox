@@ -1,4 +1,4 @@
-import { HeaderSectionProps } from "../types/props";
+import type { HeaderSectionProps } from "../types/props";
 import { clsx } from "clsx";
 import { motion } from "framer-motion";
 
@@ -25,7 +25,7 @@ const HeaderSectionContent = (props: HeaderSectionProps) => {
 };
 
 const HeaderSection = (props: HeaderSectionProps) => {
-  const { variant, heading, content, animate } = props;
+  const { variant, animate } = props;
   const variantStyles = clsx(
     "flex flex-col items-center justify-center rounded-lg py-24",
     variant === "dark" && "bg-gray-800 shadow-md text-white",

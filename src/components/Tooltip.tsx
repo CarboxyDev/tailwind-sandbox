@@ -1,5 +1,5 @@
 import * as RadixTooltip from "@radix-ui/react-tooltip";
-import { TooltipProps } from "../types/props";
+import type { TooltipProps } from "../types/props";
 
 const Tooltip = (props: TooltipProps) => {
   const { children, text } = props;

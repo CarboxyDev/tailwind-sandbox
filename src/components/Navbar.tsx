@@ -20,7 +20,10 @@ const Navbar = () => {
         <div className="ml-16 hidden list-none flex-row items-center gap-x-9 lg:flex">
           {navItems.map((item) => {
             return (
-              <li className="rounded-md px-2 py-1 text-sm text-slate-600 hover:bg-slate-50 hover:text-slate-700">
+              <li
+                key={crypto.randomUUID()}
+                className="rounded-md px-2 py-1 text-sm text-slate-600 hover:bg-slate-50 hover:text-slate-700"
+              >
                 <Link href={item.link}>{item.name}</Link>
               </li>
             );

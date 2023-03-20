@@ -1,13 +1,13 @@
 import { CheckIcon } from "@heroicons/react/24/solid";
 import { clsx } from "clsx";
-import { PricingCardProps } from "../types/props";
+import type { PricingCardProps } from "../types/props";
 
 type PricingListItemType = {
   text: string;
 };
 
 const PricingListItem = (props: PricingListItemType) => {
-  let { text } = props;
+  const { text } = props;
 
   return (
     <>
@@ -39,7 +39,7 @@ const PricingCard = (props: PricingCardProps) => {
         <div className="h-px w-full bg-gray-200" />
         <div className="pt-9 pb-7">
           {benefits.map((b: string) => {
-            return <PricingListItem text={b} />;
+            return <PricingListItem key={crypto.randomUUID()} text={b} />;
           })}
         </div>
         <div className="h-px w-full bg-gray-200" />

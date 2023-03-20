@@ -1,6 +1,4 @@
-import { SVGAttributes } from "react";
-
-export const GoogleIcon = (props: any) => {
+export const GoogleIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -16,14 +14,13 @@ export const GoogleIcon = (props: any) => {
   );
 };
 
-export const GithubIcon = (props: any) => {
+export const GithubIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      {...props}
     >
       <path
         fill="currentColor"
@@ -33,14 +30,13 @@ export const GithubIcon = (props: any) => {
   );
 };
 
-export const TwitterIcon = (props: any) => {
+export const TwitterIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      {...props}
     >
       <path
         fill="currentColor"
@@ -50,7 +46,7 @@ export const TwitterIcon = (props: any) => {
   );
 };
 
-export function ArrowSmallRightIcon(props: any) {
+export function ArrowSmallRightIcon(props: { className: string }) {
   return (
     <svg
       fill="currentColor"

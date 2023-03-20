@@ -3,14 +3,12 @@ import {
   ArrowUpTrayIcon,
   BoltIcon,
   ChartBarIcon,
-  ChatBubbleLeftEllipsisIcon,
   CloudIcon,
   LockClosedIcon,
 } from "@heroicons/react/24/solid";
 import { clsx } from "clsx";
 import { twMerge as tw } from "tailwind-merge";
-
-import { FeatureCardProps, FeatureItemProps } from "../types/props";
+import type { FeatureCardProps, FeatureItemProps } from "../types/props";
 import { clsxtw } from "../utils/misc";
 
 const FeatureItem = (props: FeatureItemProps) => {

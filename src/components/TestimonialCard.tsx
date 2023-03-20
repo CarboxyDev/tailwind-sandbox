@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
-import { TestimonialCardProps } from "../types/props";
+import type { TestimonialCardProps } from "../types/props";
 
 const TestimonialCard = (props: TestimonialCardProps) => {
-  let { comment, author } = props;
-  let { name, title, image } = author;
+  const { comment, author } = props;
+  const { name, title, image } = author;
 
   return (
     <motion.div
@@ -24,7 +24,11 @@ const TestimonialCard = (props: TestimonialCardProps) => {
             <span className="mb-1 text-sm text-gray-400">{title}</span>
           </div>
           <div className="ml-auto">
-            <img src={"/" + image} className="h-12 w-12 rounded-full" />
+            <img
+              src={"/" + image}
+              alt="author-image"
+              className="h-12 w-12 rounded-full"
+            />
           </div>
         </div>
       </div>

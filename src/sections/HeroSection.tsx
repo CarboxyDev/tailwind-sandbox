@@ -14,8 +14,8 @@ const HeroSection = () => {
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
               This will be some secondary text which will convey a lengthy yet
-              brief message and assure the visitor of what the product's pros
-              are as well as its qualities.
+              brief message and assure the visitor of what the product&apos;s
+              pros are as well as its qualities.
             </p>
             <div className="mt-15 flex flex-row">
               <button className="text-md rounded-lg bg-primary px-7 py-4 font-semibold text-white shadow hover:bg-primary-400">

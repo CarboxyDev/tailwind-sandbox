@@ -1,4 +1,4 @@
-import { FillerProps } from "../types/props";
+import type { FillerProps } from "../types/props";
 
 const Filler = (props: FillerProps) => {
   const { height, width } = props;

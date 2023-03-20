@@ -1,9 +1,9 @@
-import { CompactCardProps } from "../types/props";
+import type { CompactCardProps } from "../types/props";
 
 // TODO: Make this component responsive
 
 const CompactCard = (props: CompactCardProps) => {
-  let { title, text, icon } = props;
+  const { title, text, icon } = props;
 
   return (
     <>
