@@ -26,8 +26,24 @@ const Sandbox: NextPage = () => {
         <Navbar />
         <Divider />
         <HeroSection />
-        <Filler height={100} />
-        <HeaderSection variant="dark" />
+        {
+          // <Filler height={100} />
+        }
+        <div className="h-25"></div>
+        <HeaderSection
+          variant="light"
+          heading="Great heading"
+          content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+            molestias minus, inventore autem animi voluptatem reprehenderit
+            debitis praesentium qui, nemo quasi."
+        />
+        <HeaderSection
+          variant="dark"
+          heading="Another great heading"
+          content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+            molestias minus, inventore autem animi voluptatem reprehenderit
+            debitis praesentium qui, nemo quasi."
+        />
       </div>
 
       {/*

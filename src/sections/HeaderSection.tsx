@@ -1,20 +1,28 @@
 import { HeaderSectionProps } from "../types/props";
+import { clsx } from "clsx";
 
 const HeaderSection = (props: HeaderSectionProps) => {
-  const { variant } = props;
+  const { variant, heading, content } = props;
 
   return (
     <>
-      <div className="flex flex-col items-center justify-center rounded-lg bg-gray-800 py-24">
+      <div
+        className={clsx(
+          "flex flex-col items-center justify-center rounded-lg py-24",
+          variant === "dark" && "bg-gray-800 text-white",
+          variant === "light" && "bg-white text-gray-800"
+        )}
+      >
         <div className="mx-2 flex max-w-md flex-col items-center justify-center md:max-w-2xl">
-          <h2 className="text-3xl font-bold text-white md:text-6xl">
-            Some heading
-          </h2>
-          <p className="text-md mt-6 break-words text-center leading-8 text-gray-300 md:text-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-            molestias minus, inventore autem animi voluptatem reprehenderit
-            debitis praesentium qui, nemo quasi. Reiciendis quos quam, molestias
-            eveniet debitis dolores atque quisquam.
+          <h2 className="text-3xl font-bold md:text-6xl">{heading}</h2>
+          <p
+            className={clsx(
+              "text-md mt-6 break-words text-center leading-8 md:text-lg",
+              variant === "dark" && "text-gray-300",
+              variant === "light" && "text-gray-500"
+            )}
+          >
+            {content}
           </p>
         </div>
       </div>

@@ -1,5 +1,3 @@
-//import { ArrowSmallRightIcon } from "@heroicons/react/24/solid";
-
 import { motion } from "framer-motion";
 import { ArrowSmallRightIcon } from "../utils/icons";
 
