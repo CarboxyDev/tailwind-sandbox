@@ -34,6 +34,10 @@ const Sandbox: NextPage = () => {
           Button text
         </Button>
         <Filler height="h-12" />
+        <Button variant="outline" size="md">
+          Outline button
+        </Button>
+        <Filler height="h-12" />
         <Button variant="default" size="sm">
           Button text
         </Button>
