@@ -3,6 +3,7 @@ import * as RadixDropdownMenu from "@radix-ui/react-dropdown-menu";
 import Link from "next/link";
 import { useState } from "react";
 import type { HamburgerDropdownProps } from "../types/props";
+import crypto from "crypto";
 
 // TODO: Animate the hamburger menu icon when opening or closing the dropdown
 // TODO: Animate the Dropdown Content for entry and exit

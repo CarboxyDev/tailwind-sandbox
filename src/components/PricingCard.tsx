@@ -1,6 +1,7 @@
 import { CheckIcon } from "@heroicons/react/24/solid";
 import { clsx } from "clsx";
 import type { PricingCardProps } from "../types/props";
+import crypto from "crypto";
 
 type PricingListItemType = {
   text: string;
