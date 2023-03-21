@@ -1,3 +1,5 @@
+import type { ButtonHTMLAttributes } from "react";
+
 export type HeaderSectionProps = {
   variant: "light" | "dark";
   heading: string;
@@ -75,9 +77,10 @@ export type CardWithImageAndButtonProps = {
   buttonText: string;
 };
 
-export type ButtonProps = {
-  children: JSX.Element;
-};
+export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+  size: "xl" | "lg" | "md" | "sm" | "xs";
+  variant: "default" | "outline";
+}
 
 export type FeatureItemProps = {
   heading: string;

@@ -9,7 +9,7 @@ import {
 import { clsx } from "clsx";
 import { twMerge as tw } from "tailwind-merge";
 import type { FeatureCardProps, FeatureItemProps } from "../types/props";
-import { clsxtw } from "../utils/misc";
+import { cn } from "../utils/misc";
 
 const FeatureItem = (props: FeatureItemProps) => {
   const { heading, content, icon, variant } = props;
@@ -20,7 +20,7 @@ const FeatureItem = (props: FeatureItemProps) => {
         <div className="mt-1 self-start">
           <div
             className={tw(
-              clsxtw(
+              cn(
                 "flex h-14 w-14 items-center justify-center rounded-full",
                 "[&>*]:h-6 [&>*]:w-6",
                 variant === "light" &&

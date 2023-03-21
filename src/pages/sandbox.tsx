@@ -21,6 +21,7 @@ import Filler from "../components/Filler";
 import ContentWithImageSection from "../sections/ContentWithImageSection";
 import FeatureCard from "../components/FeatureCard";
 import CTASection from "../sections/CTASection";
+import Button from "../components/Button";
 
 const Sandbox: NextPage = () => {
   return (
@@ -29,6 +30,21 @@ const Sandbox: NextPage = () => {
         <Navbar />
         <Divider />
         <HeroSection />
+        <Button variant="default" size="md">
+          Button text
+        </Button>
+        <Filler height="h-12" />
+        <Button variant="default" size="sm">
+          Button text
+        </Button>
+        <Filler height="h-12" />
+        <Button variant="default" size="xl">
+          Button text
+        </Button>
+        <Filler height="h-12" />
+        <Button variant="default" size="xs">
+          Button text
+        </Button>
         <Filler height="h-100" />
         <CTASection
           heading="Take the leap and get started"
