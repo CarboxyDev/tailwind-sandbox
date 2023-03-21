@@ -1,6 +1,6 @@
 import Link from "next/link";
 import HamburgerDropdown from "./HamburgerDropdown";
-import crypto from "crypto";
+import { v4 as uuidv4 } from "uuid";
 
 const Navbar = () => {
   const navItems = [
@@ -22,7 +22,7 @@ const Navbar = () => {
           {navItems.map((item) => {
             return (
               <li
-                key={crypto.randomUUID()}
+                key={uuidv4()}
                 className="rounded-md px-2 py-1 text-sm text-slate-600 hover:bg-slate-50 hover:text-slate-700"
               >
                 <Link href={item.link}>{item.name}</Link>

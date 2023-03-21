@@ -3,7 +3,7 @@ import * as RadixDropdownMenu from "@radix-ui/react-dropdown-menu";
 import Link from "next/link";
 import { useState } from "react";
 import type { HamburgerDropdownProps } from "../types/props";
-import crypto from "crypto";
+import { v4 as uuidv4 } from "uuid";
 
 // TODO: Animate the hamburger menu icon when opening or closing the dropdown
 // TODO: Animate the Dropdown Content for entry and exit
@@ -26,7 +26,7 @@ const HamburgerDropdown = (props: HamburgerDropdownProps) => {
             {navItems.map((item: { name: string; link: string }) => {
               return (
                 <span
-                  key={crypto.randomUUID()}
+                  key={uuidv4()}
                   className="my-1 flex flex-col items-center justify-center self-start"
                 >
                   <RadixDropdownMenu.Item className="rounded-md px-2 py-2 font-medium text-gray-100 hover:bg-neutral-700">
