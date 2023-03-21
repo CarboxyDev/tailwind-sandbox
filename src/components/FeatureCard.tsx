@@ -62,7 +62,7 @@ const FeatureCard = (props: FeatureCardProps) => {
   const { variant } = props;
   return (
     <>
-      <div className="flex justify-center lg:-mx-20 xl:mx-0">
+      <div className="flex justify-center lg:-mx-14 xl:mx-0">
         <div
           className={clsx(
             "grid max-w-md grid-cols-none grid-rows-3 rounded-2xl lg:max-w-none lg:grid-cols-3 lg:grid-rows-none",

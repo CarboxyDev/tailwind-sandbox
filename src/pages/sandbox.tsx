@@ -25,7 +25,7 @@ import CTASection from "../sections/CTASection";
 const Sandbox: NextPage = () => {
   return (
     <>
-      <div id="app-container" className="px-4 sm:px-8 lg:px-28">
+      <div id="app-container" className="px-4 sm:px-8 lg:px-20 xl:px-28">
         <Navbar />
         <Divider />
         <HeroSection />
