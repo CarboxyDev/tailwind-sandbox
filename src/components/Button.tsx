@@ -30,6 +30,7 @@ const buttonVariants = cva(
 
 const Button = (props: ButtonProps) => {
   const { size, variant, className } = props;
+  console.log(className);
 
   return (
     <>

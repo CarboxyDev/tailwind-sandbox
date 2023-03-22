@@ -34,3 +34,24 @@ html {
     background-position: 0% 50%;
   }
 }
+
+.gradient-box {
+  background: linear-gradient(334deg, #387aff, #9955f5, #47d8ec);
+  background-size: 180% 180%;
+}
+
+.gradient-box:hover {
+  animation: gradient-box-animation 4s ease infinite;
+}
+
+@keyframes gradient-box-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

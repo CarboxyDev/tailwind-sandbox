@@ -21,34 +21,18 @@ import Filler from "../components/Filler";
 import ContentWithImageSection from "../sections/ContentWithImageSection";
 import FeatureCard from "../components/FeatureCard";
 import CTASection from "../sections/CTASection";
-import Button from "../components/Button";
+import GradientBox from "../components/GradientBox";
 
 const Sandbox: NextPage = () => {
   return (
     <>
       <div id="app-container" className="px-4 sm:px-8 lg:px-20 xl:px-28">
+        <Filler height="h-20" />
+        <GradientBox />
+        <Filler height="h-200" />
         <Navbar />
         <Divider />
         <HeroSection />
-        <Button variant="default" size="md">
-          Button text
-        </Button>
-        <Filler height="h-12" />
-        <Button variant="outline" size="md">
-          Outline button
-        </Button>
-        <Filler height="h-12" />
-        <Button variant="default" size="sm">
-          Button text
-        </Button>
-        <Filler height="h-12" />
-        <Button variant="default" size="xl">
-          Button text
-        </Button>
-        <Filler height="h-12" />
-        <Button variant="default" size="xs">
-          Button text
-        </Button>
         <Filler height="h-100" />
         <CTASection
           heading="Take the leap and get started"
