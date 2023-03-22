@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Button from "../components/Button";
 import { ArrowSmallRightIcon } from "../utils/icons";
 
 // NOTE: This is a section and not a component so it'll probably have very little modularity
@@ -18,9 +19,9 @@ const HeroSection = () => {
               pros are as well as its qualities.
             </p>
             <div className="mt-15 flex flex-row">
-              <button className="text-md rounded-lg bg-primary px-7 py-4 font-semibold text-white shadow hover:bg-primary-400">
+              <Button size="xl" variant="default">
                 Get started
-              </button>
+              </Button>
               <button className="text-md ml-8 flex flex-row items-center font-semibold text-gray-700 hover:text-primary">
                 Learn more <ArrowSmallRightIcon className="ml-2 h-4 w-4" />
               </button>

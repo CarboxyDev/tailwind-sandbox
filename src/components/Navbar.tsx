@@ -1,6 +1,7 @@
 import Link from "next/link";
 import HamburgerDropdown from "./HamburgerDropdown";
 import { v4 as uuidv4 } from "uuid";
+import Button from "./Button";
 
 const Navbar = () => {
   const navItems = [
@@ -31,9 +32,12 @@ const Navbar = () => {
           })}
         </div>
         <div className="ml-auto flex flex-row gap-x-8">
-          <button className="hidden h-12 w-32 items-center justify-center rounded-lg bg-primary text-sm font-semibold text-white transition-colors delay-100 ease-in hover:bg-primary-400 sm:flex">
-            Sign up
-          </button>
+          <div className="hidden items-center justify-center sm:flex">
+            <Button size="md" variant="outline">
+              Sign up
+            </Button>
+          </div>
+
           <div className="lg:hidden">
             <HamburgerDropdown navItems={navItems} />
           </div>

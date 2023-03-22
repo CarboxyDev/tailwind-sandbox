@@ -8,5 +8,11 @@
   "rules": {
     "@typescript-eslint/consistent-type-imports": "warn",
     "@next/next/no-img-element": "off"
-  }
+  },
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.js"],
+      "parser": "@typescript-eslint/parser"
+    }
+  ]
 }
