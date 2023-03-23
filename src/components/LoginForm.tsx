@@ -9,7 +9,7 @@ const LoginForm = () => {
           <p className="font-medium text-gray-600">Email address</p>
           <input
             type="email"
-            className="mt-3 h-10 rounded-lg border border-gray-300 px-2 text-gray-700 focus:outline-primary"
+            className="mt-3 h-10 rounded-lg border border-gray-300 px-2 text-gray-700 focus:outline-primary focus:invalid:outline-red-400"
             required
             autoComplete="on"
           />
