@@ -21,14 +21,13 @@ import Filler from "../components/Filler";
 import ContentWithImageSection from "../sections/ContentWithImageSection";
 import FeatureCard from "../components/FeatureCard";
 import CTASection from "../sections/CTASection";
-import GradientBox from "../components/GradientBox";
 
 const Sandbox: NextPage = () => {
   return (
     <>
       <div id="app-container" className="px-4 sm:px-8 lg:px-20 xl:px-28">
         <Filler height="h-20" />
-        <GradientBox />
+
         <Filler height="h-200" />
         <Navbar />
         <Divider />

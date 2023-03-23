@@ -10,8 +10,12 @@ const HeroSection = () => {
       <div className="grid grid-cols-none grid-rows-2 gap-x-8 gap-y-6 pt-32 lg:grid-cols-2 lg:grid-rows-none">
         <div className="mx-3 mt-6 flex flex-col sm:mx-0">
           <div className="mx-auto sm:max-w-lg lg:max-w-none">
-            <h1 className="text-3xl font-bold text-gray-800 lg:text-4xl xl:text-5xl">
-              This is a great headline in two lines
+            <h1 className="text-3xl font-bold text-gray-700 lg:text-4xl xl:text-5xl">
+              This is a{" "}
+              <span className="transition-colors duration-300 ease-linear hover:text-primary-500">
+                great headline
+              </span>{" "}
+              in two lines
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
               This will be some secondary text which will convey a lengthy yet

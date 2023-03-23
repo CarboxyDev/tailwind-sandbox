@@ -3,7 +3,7 @@
 const GradientBox = () => {
   return (
     <>
-      <div className="gradient-box h-120 w-125 rounded-2xl"></div>
+      <div className="gradient-box h-60 w-64 rounded-2xl"></div>
     </>
   );
 };
