@@ -16,6 +16,7 @@
     "@types/uuid": "^9.0.1",
     "class-variance-authority": "^0.4.0",
     "clsx": "^1.2.1",
+    "cssnano": "^5.1.15",
     "framer-motion": "^10.3.1",
     "next": "13.1.1",
     "react": "18.2.0",
