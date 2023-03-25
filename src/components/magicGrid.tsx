@@ -4,12 +4,12 @@ import { motion } from "framer-motion";
 const MagicGrid = () => {
   return (
     <>
-      <div className="grid-rows-12 grid h-100 w-100 grid-cols-12">
+      <div className="grid-rows-12 grid h-80 w-80 grid-cols-12 p-px sm:h-150 sm:w-150">
         {[...Array(144)].map((item) => {
           return (
             <motion.div
               key={uuidv4()}
-              className="border border-neutral-600 bg-yellow-100"
+              className="-m-px border border-neutral-200 bg-yellow-50"
               whileHover={{
                 backgroundColor: "#fef08a",
                 transition: { duration: 0, ease: "linear" },
