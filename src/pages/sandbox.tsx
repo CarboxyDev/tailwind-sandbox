@@ -22,13 +22,14 @@ import ContentWithImageSection from "../sections/ContentWithImageSection";
 import FeatureCard from "../components/FeatureCard";
 import CTASection from "../sections/CTASection";
 import MagicGrid from "../components/magicGrid";
+import Connect from "../components/Connect";
 
 const Sandbox: NextPage = () => {
   return (
     <>
       <div id="app-container" className="px-4 sm:px-8 lg:px-20 xl:px-28">
         <Filler height="h-20" />
-        <MagicGrid />
+        <Connect />
 
         <Filler height="h-200" />
         <Navbar />
@@ -81,6 +82,7 @@ const Sandbox: NextPage = () => {
           animate={true}
         />
       </div>
+      <MagicGrid />
 
       {/*
           JSX above is part of the core assembly section for testing layouts, app design, etc.

@@ -12,10 +12,12 @@ const MagicGrid = () => {
               className="-m-px border border-neutral-200 bg-yellow-50"
               whileHover={{
                 backgroundColor: "#fef08a",
+                borderColor: "#fef08a",
                 transition: { duration: 0, ease: "linear" },
               }}
               exit={{
                 backgroundColor: "#fef9c3",
+                borderColor: "#e5e5e5",
                 transition: { duration: 2 },
               }}
               transition={{ duration: 0.5, ease: "linear" }}
