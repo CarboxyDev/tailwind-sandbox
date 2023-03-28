@@ -18,6 +18,11 @@ const Connect = () => {
         setConnected("success");
       }
     }, 2000);
+
+    // cleanup function
+    return () => {
+      //
+    };
   }, []);
 
   return (
