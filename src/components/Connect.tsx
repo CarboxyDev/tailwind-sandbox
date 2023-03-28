@@ -18,12 +18,12 @@ const Connect = () => {
         setConnected("success");
       }
     }, 2000);
-  }, [connected]);
+  }, []);
 
   return (
     <>
-      <div className="h-18 w-80 sm:w-100">
-        <div className="flex h-full w-full flex-row items-center rounded-2xl border border-gray-200 bg-slate-50 px-6 py-6">
+      <div className="h-18 w-80 rounded-xl border border-gray-200 bg-slate-50 sm:w-100">
+        <div className="flex h-full w-full flex-row items-center px-6 py-6">
           <div>
             {connected == "connecting" && (
               <span className="font-semibold text-slate-600">
