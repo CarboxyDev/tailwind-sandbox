@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
 import { randint } from "../utils/misc";
-import { Rings } from "svg-loaders-react";
 import clsx from "clsx";
-import { CheckIcon } from "../utils/icons";
+import { CheckIcon, RingsAnimatedIcon } from "../utils/icons";
 
 type connectType = "connecting" | "success" | "failure";
 
@@ -36,22 +35,22 @@ const Connect = () => {
             )}
             {connected == "failure" && (
               <span className="font-semibold text-red-500">
-                Unable to connect
+                Failed to connect
               </span>
             )}
           </div>
           <div className="ml-auto">
             {connected != "success" && (
-              <Rings
+              <RingsAnimatedIcon
                 className={clsx(
-                  "stroke-slate-500",
+                  "h-8 w-8 stroke-slate-600",
                   connected == "connecting" && "visible",
                   connected == "failure" && "invisible"
                 )}
               />
             )}
             {connected == "success" && (
-              <CheckIcon className="h-6 w-6 text-green-500"></CheckIcon>
+              <CheckIcon className="h-8 w-8 text-green-500"></CheckIcon>
             )}
           </div>
         </div>
