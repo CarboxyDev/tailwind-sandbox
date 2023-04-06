@@ -23,6 +23,7 @@ import FeatureCard from "../components/FeatureCard";
 import CTASection from "../sections/CTASection";
 import MagicGrid from "../components/magicGrid";
 import Connect from "../components/Connect";
+import { v4 as uuidv4 } from "uuid";
 
 const Sandbox: NextPage = () => {
   return (
@@ -82,17 +83,11 @@ const Sandbox: NextPage = () => {
           animate={true}
         />
       </div>
-      <MagicGrid />
 
-      {/*
-          JSX above is part of the core assembly section for testing layouts, app design, etc.
-          JSX below is part of the pure sandbox section
-        */}
-
-      <div className="pt-80 pb-80"></div>
+      <div className="pb-80 pt-80"></div>
       <div className="px-4 pt-12 sm:px-10 md:px-12">
         <div className="pt-24"></div>
-        <div className="pt-40 pb-40"></div>
+        <div className="pb-40 pt-40"></div>
         <Tooltip text="Thanks for hovering!">
           <span className="text-gray-600 underline decoration-dotted hover:text-primary">
             hover over me!
@@ -116,7 +111,7 @@ const Sandbox: NextPage = () => {
             content="This is some example text for this card design. Let's fit some more content in here so that it feels not-so-empty. Alright, that's enough for now."
           />
         </div>
-        <div className="pt-80 pb-80"></div>
+        <div className="pb-80 pt-80"></div>
         <div className="2xl:grids-cols-4 grid grid-cols-1 gap-x-4 gap-y-4 md:grid-cols-2 xl:grid-cols-3">
           <CardWithImage
             image="/generic-image-2.jpg"
@@ -134,11 +129,11 @@ const Sandbox: NextPage = () => {
             content="This is some example text for this card design. Let's fit some more content in here so that it feels not-so-empty. Alright, that's enough for now."
           />
         </div>
-        <div className="pt-80 pb-80"></div>
+        <div className="pb-80 pt-80"></div>
         <div className="flex items-center justify-center">
           <LoginForm />
         </div>
-        <div className="pt-80 pb-80"></div>
+        <div className="pb-80 pt-80"></div>
         <div className="grid grid-cols-1 gap-x-6 gap-y-6 sm:grid-cols-2 xl:grid-cols-3 ">
           <TestimonialCard
             comment="This product is an amazing invention. I'm impressed with how fast the
@@ -167,7 +162,7 @@ const Sandbox: NextPage = () => {
             }}
           />
         </div>
-        <div className="pt-80 pb-80"></div>
+        <div className="pb-80 pt-80"></div>
         <div className="grid grid-cols-1 gap-x-6 gap-y-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           <PricingCard
             plan={{
