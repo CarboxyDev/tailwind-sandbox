@@ -5,7 +5,7 @@ const MagicGrid = () => {
   return (
     <>
       <div className="grid-rows-12 grid h-20 w-20 grid-cols-12 p-px">
-        {[...Array(144)].map((item) => {
+        {[...Array(144)].map(() => {
           return (
             <motion.div
               key={uuidv4()}

@@ -21,9 +21,7 @@ import Filler from "../components/Filler";
 import ContentWithImageSection from "../sections/ContentWithImageSection";
 import FeatureCard from "../components/FeatureCard";
 import CTASection from "../sections/CTASection";
-import MagicGrid from "../components/magicGrid";
 import Connect from "../components/Connect";
-import { v4 as uuidv4 } from "uuid";
 
 const Sandbox: NextPage = () => {
   return (
