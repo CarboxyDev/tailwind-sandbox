@@ -35,8 +35,8 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ["Inter var", ...defaultTheme.fontFamily.sans],
-        inter: ["Inter var", ...defaultTheme.fontFamily.sans],
+        sans: ["var(--font-inter)", ...defaultTheme.fontFamily.sans],
+        inter: ["var(--font-inter)", ...defaultTheme.fontFamily.sans],
       },
       spacing: {
         15: "60px",

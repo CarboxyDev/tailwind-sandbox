@@ -28,9 +28,10 @@ const Sandbox: NextPage = () => {
     <>
       <div id="app-container" className="px-4 sm:px-8 lg:px-20 xl:px-28">
         <Filler height="h-20" />
-        <Connect />
+        <Filler height="h-200" />
 
         <Filler height="h-200" />
+        <Connect />
         <Navbar />
         <Divider />
         <HeroSection />

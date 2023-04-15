@@ -7,7 +7,12 @@ const Login: NextPage = () => {
       <Head>
         <title>Login Page</title>
       </Head>
-      <main></main>
+      <main>
+        <div className="grid h-screen grid-cols-2">
+          <div className="bg-black"></div>
+          <div></div>
+        </div>
+      </main>
     </>
   );
 };
