@@ -1,20 +1,20 @@
 import Link from "next/link";
 import Image from "next/image";
-import HamburgerDropdown from "./HamburgerDropdown";
 import { v4 as uuidv4 } from "uuid";
-import Button from "./Button";
+import { BellIcon } from "@heroicons/react/24/outline";
+import HamburgerDropdown from "./HamburgerDropdown";
 
 const Navbar2 = () => {
   const navItems = [
+    { name: "Home", link: "/" },
     { name: "Browse", link: "/browse" },
     { name: "Features", link: "/features" },
-    { name: "Testimonials", link: "#testimonials" },
-    { name: "About us", link: "#about-us" },
+    { name: "Testimonials", link: "/#testimonials" },
   ];
   return (
     <>
       <div className="flex h-24 flex-row items-center sm:h-32">
-        <div className="flex flex-row items-center gap-x-3">
+        <div className="hidden flex-row items-center gap-x-3 lg:flex">
           <Link href="/">
             <Image
               src="/generic-logo-1.png"
@@ -38,15 +38,21 @@ const Navbar2 = () => {
             );
           })}
         </div>
+        <div className="lg:hidden">
+          <HamburgerDropdown navItems={navItems} />
+        </div>
         <div className="ml-auto flex flex-row gap-x-8">
-          <div className="hidden items-center justify-center sm:flex">
-            <Button size="md" variant="outline">
-              Sign up
-            </Button>
-          </div>
-
-          <div className="lg:hidden">
-            <HamburgerDropdown navItems={navItems} />
+          <div className="flex flex-row items-center gap-x-6">
+            <BellIcon className="h-8 w-8 text-gray-400" />
+            <Link href="/">
+              <Image
+                src="/generic-man-1.png"
+                width={48}
+                height={48}
+                className=""
+                alt=""
+              />
+            </Link>
           </div>
         </div>
       </div>

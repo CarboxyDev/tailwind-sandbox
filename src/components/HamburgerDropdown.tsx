@@ -7,6 +7,7 @@ import { v4 as uuidv4 } from "uuid";
 
 // TODO: Animate the hamburger menu icon when opening or closing the dropdown
 // TODO: Animate the Dropdown Content for entry and exit
+// FIXME: Font in the dropdown items is Times for some reason instead of the default Inter font
 
 const HamburgerDropdown = (props: HamburgerDropdownProps) => {
   const { navItems } = props;
