@@ -18,7 +18,6 @@ import HeroSection from "../sections/HeroSection";
 import HeaderSection from "../sections/HeaderSection";
 import Divider from "../components/Divider";
 import Filler from "../components/Filler";
-import ContentWithImageSection from "../sections/ContentWithImageSection";
 import FeatureCard from "../components/FeatureCard";
 import CTASection from "../sections/CTASection";
 import Connect from "../components/Connect";
@@ -57,13 +56,6 @@ const Sandbox: NextPage = () => {
         <FeatureCard variant="dark" />
         <Filler height="h-100" />
         <FeatureCard variant="light" />
-        <Filler height="h-100" />
-        <ContentWithImageSection
-          image="/skyrim-1.jpeg"
-          heading="Skyrim is one of the most famous games of the century"
-          content="It is also the most influential RPGs of all time. It is still well respected and heavily modded to this day."
-          reverse={true}
-        />
         <Filler height="h-100" />
         <HeaderSection
           variant="light"
@@ -123,7 +115,7 @@ const Sandbox: NextPage = () => {
             content="It's a nice game. Buy it and pump Godd Todd's bank."
           />
           <CardWithImage
-            image="/skyrim-2.jpeg"
+            image="/generic-image-2.jpg"
             heading="Some Heading"
             content="This is some example text for this card design. Let's fit some more content in here so that it feels not-so-empty. Alright, that's enough for now."
           />

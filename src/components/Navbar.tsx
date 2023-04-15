@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import HamburgerDropdown from "./HamburgerDropdown";
 import { v4 as uuidv4 } from "uuid";
 import Button from "./Button";
@@ -15,7 +16,13 @@ const Navbar = () => {
       <div className="flex h-24 flex-row items-center sm:h-32">
         <div className="flex flex-row items-center gap-x-3">
           <Link href="/">
-            <img src="/generic-logo-1.png" className="h-12 w-12" alt="logo" />
+            <Image
+              src="/generic-logo-1.png"
+              width={48}
+              height={48}
+              className="h-12 w-12"
+              alt="logo"
+            />
           </Link>
           <h2 className="text-lg font-semibold text-slate-700">sandbox</h2>
         </div>

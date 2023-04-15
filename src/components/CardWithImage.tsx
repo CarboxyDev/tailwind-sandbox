@@ -1,4 +1,5 @@
 import type { CardWithImageProps } from "../types/props";
+import Image from "next/image";
 
 const CardWithImage = (props: CardWithImageProps) => {
   const { image, heading, content } = props;
@@ -7,8 +8,10 @@ const CardWithImage = (props: CardWithImageProps) => {
     <>
       <div className="max-w-screen-sm:max-w-xs w-80 self-start rounded-2xl pb-11 shadow lg:w-100">
         <div className="h-50">
-          <img
+          <Image
             src={image}
+            width={200}
+            height={200}
             className="h-full w-full rounded-t-md object-cover"
             alt="card image"
           />

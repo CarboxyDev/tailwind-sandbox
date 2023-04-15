@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -6,11 +7,13 @@ const Footer = () => {
       <div className="flex flex-col justify-center px-6 py-12 sm:px-28">
         <div className="h-px bg-gray-200"></div>
         <div className="mt-10 flex flex-row items-center justify-center leading-6">
-          <img
+          <Image
             src="/generic-logo-1.png"
+            width={32}
+            height={32}
             alt="brand-logo"
             className="h-8 w-8"
-          ></img>
+          ></Image>
           <h3 className="ml-3 font-semibold text-slate-900">sandbox</h3>
           <span className="ml-2 rounded border border-gray-300 px-3 py-1 text-xs font-semibold tracking-wider text-gray-300 transition-colors delay-150 ease-in-out hover:border-emerald-400 hover:bg-emerald-400 hover:text-white">
             BETA

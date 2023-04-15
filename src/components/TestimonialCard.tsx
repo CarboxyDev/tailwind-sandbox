@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import type { TestimonialCardProps } from "../types/props";
+import Image from "next/image";
 
 const TestimonialCard = (props: TestimonialCardProps) => {
   const { comment, author } = props;
@@ -24,8 +25,10 @@ const TestimonialCard = (props: TestimonialCardProps) => {
             <span className="mb-1 text-sm text-gray-400">{title}</span>
           </div>
           <div className="ml-auto">
-            <img
+            <Image
               src={"/" + image}
+              width={48}
+              height={48}
               alt="author-image"
               className="h-12 w-12 rounded-full"
             />

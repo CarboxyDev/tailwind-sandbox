@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Button from "../components/Button";
 import { ArrowSmallRightIcon } from "../utils/icons";
+import Image from "next/image";
 
 // NOTE: This is a section and not a component so it'll probably have very little modularity
 
@@ -42,8 +43,10 @@ const HeroSection = () => {
               scale: 1.02,
             }}
           >
-            <img
+            <Image
               src="/generic-hero-image-1.png"
+              width={456}
+              height={456}
               alt="hero-image"
               className="lg: mx-auto w-[456px] lg:mx-0 lg:ml-auto lg:w-[342px] xl:w-[456px]"
             />
