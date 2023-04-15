@@ -21,14 +21,14 @@ import Filler from "../components/Filler";
 import FeatureCard from "../components/FeatureCard";
 import CTASection from "../sections/CTASection";
 import Connect from "../components/Connect";
-import LoginFormChiron from "../components/LoginForm_Chiron";
+import Navbar2 from "../components/Navbar2";
 
 const Sandbox: NextPage = () => {
   return (
     <>
       <div id="app-container" className="px-4 sm:px-8 lg:px-20 xl:px-28">
         <Filler height="h-20" />
-        <LoginFormChiron />
+        <Navbar2 />
         <Filler height="h-200" />
 
         <Filler height="h-200" />
