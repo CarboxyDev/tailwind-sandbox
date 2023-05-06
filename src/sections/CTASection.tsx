@@ -1,5 +1,5 @@
-import clsx from "clsx";
 import type { CTASectionProps } from "../types/props";
+import { cn } from "../utils/misc";
 
 const CTASection = (props: CTASectionProps) => {
   const { heading, buttonText, backgroundImage } = props;
@@ -7,7 +7,7 @@ const CTASection = (props: CTASectionProps) => {
   return (
     <>
       <div
-        className={clsx(
+        className={cn(
           "flex flex-col items-center justify-center rounded-2xl py-24",
           backgroundImage
         )}

@@ -1,6 +1,6 @@
 import type { HeaderSectionProps } from "../types/props";
-import { clsx } from "clsx";
 import { motion } from "framer-motion";
+import { cn } from "../utils/misc";
 
 const HeaderSectionContent = (props: HeaderSectionProps) => {
   const { variant, heading, content } = props;
@@ -11,7 +11,7 @@ const HeaderSectionContent = (props: HeaderSectionProps) => {
           {heading}
         </h2>
         <p
-          className={clsx(
+          className={cn(
             "text-md mx-1 mt-10 break-words text-center leading-8 sm:mt-6 md:text-lg",
             variant === "dark" && "text-gray-300",
             variant === "light" && "text-gray-500"
@@ -26,7 +26,7 @@ const HeaderSectionContent = (props: HeaderSectionProps) => {
 
 const HeaderSection = (props: HeaderSectionProps) => {
   const { variant, animate } = props;
-  const variantStyles = clsx(
+  const variantStyles = cn(
     "flex flex-col items-center justify-center rounded-lg py-24",
     variant === "dark" && "bg-gray-800 shadow-md text-white",
     variant === "light" && "bg-white text-gray-800 border"

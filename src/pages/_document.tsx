@@ -1,5 +1,5 @@
 import { Html, Head, Main, NextScript } from "next/document";
-import { clsx } from "clsx";
+import { cn } from "../utils/misc";
 
 const Document = () => {
   return (
@@ -12,7 +12,7 @@ const Document = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <body
-        className={clsx(
+        className={cn(
           "font-inter",
           "bg-[#fefefe]",
           process.env.DEV == "true" && "debug-screens"

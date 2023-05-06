@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
-import { randint } from "../utils/misc";
-import clsx from "clsx";
+import { cn, randint } from "../utils/misc";
 import { CheckIcon, RingsAnimatedIcon } from "../utils/icons";
 
 type connectType = "connecting" | "success" | "failure";
@@ -47,7 +46,7 @@ const Connect = () => {
           <div className="ml-auto">
             {connected != "success" && (
               <RingsAnimatedIcon
-                className={clsx(
+                className={cn(
                   "h-8 w-8 stroke-slate-600",
                   connected == "connecting" && "visible",
                   connected == "failure" && "invisible"
