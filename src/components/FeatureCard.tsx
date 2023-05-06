@@ -6,8 +6,6 @@ import {
   CloudIcon,
   LockClosedIcon,
 } from "@heroicons/react/24/solid";
-import { clsx } from "clsx";
-import { twMerge as tw } from "tailwind-merge";
 import type { FeatureCardProps, FeatureItemProps } from "../types/props";
 import { cn } from "../utils/misc";
 
@@ -19,15 +17,13 @@ const FeatureItem = (props: FeatureItemProps) => {
       <div className="mx-8 my-6 flex flex-row items-center justify-center lg:mx-4 lg:my-10 xl:mx-8">
         <div className="mt-1 self-start">
           <div
-            className={tw(
-              cn(
-                "flex h-14 w-14 items-center justify-center rounded-full",
-                "[&>*]:h-6 [&>*]:w-6",
-                variant === "light" &&
-                  "bg-primary-300/60 text-primary-700 hover:bg-primary-300",
-                variant === "dark" &&
-                  "bg-primary text-primary-100 hover:bg-primary-400"
-              )
+            className={cn(
+              "flex h-14 w-14 items-center justify-center rounded-full",
+              "transition-colors delay-100 duration-500 ease-in-out [&>*]:h-6 [&>*]:w-6",
+              variant === "light" &&
+                "bg-primary-300/60 text-primary-700 hover:bg-primary-300",
+              variant === "dark" &&
+                "bg-primary text-primary-100 hover:bg-primary-400"
             )}
           >
             {icon}
@@ -35,7 +31,7 @@ const FeatureItem = (props: FeatureItemProps) => {
         </div>
         <div className="ml-7">
           <h3
-            className={clsx(
+            className={cn(
               "text-lg font-semibold",
               variant === "light" && "text-gray-700",
               variant === "dark" && "text-gray-100"
@@ -44,7 +40,7 @@ const FeatureItem = (props: FeatureItemProps) => {
             {heading}
           </h3>
           <p
-            className={clsx(
+            className={cn(
               "mt-2 text-sm",
               variant === "light" && "text-gray-500",
               variant === "dark" && "text-gray-400"
@@ -64,15 +60,15 @@ const FeatureCard = (props: FeatureCardProps) => {
     <>
       <div className="flex justify-center lg:-mx-14 xl:mx-0">
         <div
-          className={clsx(
+          className={cn(
             "grid max-w-md grid-cols-none grid-rows-3 rounded-2xl lg:max-w-none lg:grid-cols-3 lg:grid-rows-none",
             variant === "light" && "border border-gray-200 bg-white",
             variant === "dark" && "bg-gray-800"
           )}
         >
           <div
-            className={clsx(
-              "grid grid-rows-2 border-b lg:border-r lg:border-b-0",
+            className={cn(
+              "grid grid-rows-2 border-b lg:border-b-0 lg:border-r",
               variant === "light" && "border-gray-200",
               variant === "dark" && "border-gray-700"
             )}
@@ -92,8 +88,8 @@ const FeatureCard = (props: FeatureCardProps) => {
           </div>
 
           <div
-            className={clsx(
-              "grid grid-rows-2 border-b lg:border-r lg:border-b-0",
+            className={cn(
+              "grid grid-rows-2 border-b lg:border-b-0 lg:border-r",
               variant === "light" && "border-gray-200",
               variant === "dark" && "border-gray-700"
             )}
